@@ -1,0 +1,396 @@
+2025-05-03 15:15:19,279 - __main__ - INFO - Initializing advanced trading bot with: symbol=BTCUSDT, window_size=5, check_interval=5s, confidence_threshold=0.7, trade_amount=0.01, mock_mode=True, model_type=ensemble
+2025-05-03 15:15:20,403 - __main__ - INFO - Checking availability of requested model(s): ensemble
+2025-05-03 15:15:20,404 - __main__ - INFO - RandomForest model ready: True
+2025-05-03 15:15:20,405 - __main__ - INFO - XGBoost model ready: True
+2025-05-03 15:15:20,405 - __main__ - INFO - Advanced trading bot started at 2025-05-03 15:15:20.405765
+2025-05-03 15:15:20,409 - __main__ - INFO - Initializing price window with initial readings
+2025-05-03 15:15:26,936 - __main__ - INFO - Starting main trading loop
+2025-05-03 15:15:27,271 - __main__ - INFO - Ensemble prediction: UP with 0.88 confidence for BTCUSDT at $96255.64
+2025-05-03 15:15:28,285 - __main__ - INFO - Buy transaction executed: a7b90a3c-a26f-450b-922d-af734d420b49 for 0.01 BTCUSDT at $96255.64
+2025-05-03 15:15:32,239 - __main__ - INFO - Ensemble prediction: UP with 0.87 confidence for BTCUSDT at $96255.65
+2025-05-03 15:15:32,239 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:15:27.272207. Skipping trade.
+2025-05-03 15:15:37,235 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96255.65
+2025-05-03 15:15:37,235 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:15:27.272207. Skipping trade.
+2025-05-03 15:15:42,293 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96255.65
+2025-05-03 15:15:42,294 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:15:27.272207. Skipping trade.
+2025-05-03 15:15:47,247 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96255.65
+2025-05-03 15:15:47,248 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:15:27.272207. Skipping trade.
+2025-05-03 15:15:52,292 - __main__ - INFO - Ensemble prediction: UP with 0.95 confidence for BTCUSDT at $96255.64
+2025-05-03 15:15:52,292 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:15:27.272207. Skipping trade.
+2025-05-03 15:15:57,259 - __main__ - INFO - Ensemble prediction: UP with 0.84 confidence for BTCUSDT at $96255.64
+2025-05-03 15:15:57,260 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:15:27.272207. Skipping trade.
+2025-05-03 15:16:02,316 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96255.65
+2025-05-03 15:16:02,318 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:15:27.272207. Skipping trade.
+2025-05-03 15:16:07,329 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96255.65
+2025-05-03 15:16:07,332 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:15:27.272207. Skipping trade.
+2025-05-03 15:16:12,298 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96255.65
+2025-05-03 15:16:12,300 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:15:27.272207. Skipping trade.
+2025-05-03 15:16:12,319 - __main__ - INFO - Performance data saved to data/BTCUSDT_ensemble_performance_20250503.csv
+2025-05-03 15:16:12,321 - __main__ - INFO - Bot statistics: loops=10, runtime=51.9s, predictions=10, errors=0, avg_prediction_time=0.334s, avg_trade_time=1.009s
+2025-05-03 15:16:17,315 - __main__ - INFO - Ensemble prediction: UP with 0.83 confidence for BTCUSDT at $96347.16
+2025-05-03 15:16:18,365 - __main__ - INFO - Buy transaction executed: da4fab55-3c0d-4c46-ab61-3dfa2f80a319 for 0.01 BTCUSDT at $96347.16
+2025-05-03 15:16:22,446 - __main__ - INFO - Ensemble prediction: UP with 0.59 confidence for BTCUSDT at $96347.16
+2025-05-03 15:16:22,447 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:16:17.316754. Skipping trade.
+2025-05-03 15:16:27,326 - __main__ - INFO - Ensemble prediction: UP with 0.95 confidence for BTCUSDT at $96347.16
+2025-05-03 15:16:27,328 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:16:17.316754. Skipping trade.
+2025-05-03 15:16:32,319 - __main__ - INFO - Ensemble prediction: UP with 0.72 confidence for BTCUSDT at $96347.15
+2025-05-03 15:16:32,321 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:16:17.316754. Skipping trade.
+2025-05-03 15:16:37,353 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96347.16
+2025-05-03 15:16:37,355 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:16:17.316754. Skipping trade.
+2025-05-03 15:16:42,321 - __main__ - INFO - Ensemble prediction: UP with 0.84 confidence for BTCUSDT at $96347.15
+2025-05-03 15:16:42,325 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:16:17.316754. Skipping trade.
+2025-05-03 15:16:47,310 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96347.16
+2025-05-03 15:16:47,311 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:16:17.316754. Skipping trade.
+2025-05-03 15:16:52,307 - __main__ - INFO - Ensemble prediction: UP with 0.83 confidence for BTCUSDT at $96347.15
+2025-05-03 15:16:52,309 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:16:17.316754. Skipping trade.
+2025-05-03 15:16:57,350 - __main__ - INFO - Ensemble prediction: UP with 0.83 confidence for BTCUSDT at $96347.15
+2025-05-03 15:16:57,355 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:16:17.316754. Skipping trade.
+2025-05-03 15:17:02,504 - __main__ - INFO - Ensemble prediction: UP with 0.95 confidence for BTCUSDT at $96327.25
+2025-05-03 15:17:02,506 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:16:17.316754. Skipping trade.
+2025-05-03 15:17:02,522 - __main__ - INFO - Performance data saved to data/BTCUSDT_ensemble_performance_20250503.csv
+2025-05-03 15:17:02,525 - __main__ - INFO - Bot statistics: loops=20, runtime=102.1s, predictions=20, errors=0, avg_prediction_time=0.364s, avg_trade_time=1.017s
+2025-05-03 15:17:07,418 - __main__ - INFO - Ensemble prediction: UP with 0.84 confidence for BTCUSDT at $96327.26
+2025-05-03 15:17:08,444 - __main__ - INFO - Buy transaction executed: e1d9753b-fef9-4099-b434-ebdf816eb23a for 0.01 BTCUSDT at $96327.26
+2025-05-03 15:17:12,325 - __main__ - INFO - Ensemble prediction: UP with 0.83 confidence for BTCUSDT at $96327.25
+2025-05-03 15:17:12,326 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:17:07.421717. Skipping trade.
+2025-05-03 15:17:17,587 - __main__ - INFO - Ensemble prediction: UP with 0.87 confidence for BTCUSDT at $96327.26
+2025-05-03 15:17:17,589 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:17:07.421717. Skipping trade.
+2025-05-03 15:17:22,387 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96327.26
+2025-05-03 15:17:22,391 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:17:07.421717. Skipping trade.
+2025-05-03 15:17:27,334 - __main__ - INFO - Ensemble prediction: UP with 0.84 confidence for BTCUSDT at $96327.25
+2025-05-03 15:17:27,335 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:17:07.421717. Skipping trade.
+2025-05-03 15:17:32,333 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96327.26
+2025-05-03 15:17:32,337 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:17:07.421717. Skipping trade.
+2025-05-03 15:17:37,380 - __main__ - INFO - Ensemble prediction: UP with 0.84 confidence for BTCUSDT at $96327.25
+2025-05-03 15:17:37,381 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:17:07.421717. Skipping trade.
+2025-05-03 15:17:42,333 - __main__ - INFO - Ensemble prediction: UP with 0.83 confidence for BTCUSDT at $96327.25
+2025-05-03 15:17:42,336 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:17:07.421717. Skipping trade.
+2025-05-03 15:17:47,327 - __main__ - INFO - Ensemble prediction: UP with 0.87 confidence for BTCUSDT at $96327.26
+2025-05-03 15:17:47,328 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:17:07.421717. Skipping trade.
+2025-05-03 15:17:52,326 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96327.26
+2025-05-03 15:17:52,329 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:17:07.421717. Skipping trade.
+2025-05-03 15:17:52,341 - __main__ - INFO - Performance data saved to data/BTCUSDT_ensemble_performance_20250503.csv
+2025-05-03 15:17:52,342 - __main__ - INFO - Bot statistics: loops=30, runtime=151.9s, predictions=30, errors=0, avg_prediction_time=0.377s, avg_trade_time=1.015s
+2025-05-03 15:17:57,340 - __main__ - INFO - Ensemble prediction: UP with 0.86 confidence for BTCUSDT at $96336.00
+2025-05-03 15:17:57,342 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:17:07.421717. Skipping trade.
+2025-05-03 15:18:02,403 - __main__ - INFO - Ensemble prediction: UP with 0.87 confidence for BTCUSDT at $96336.00
+2025-05-03 15:18:03,419 - __main__ - INFO - Buy transaction executed: 822c1e44-f347-4fc7-a258-d05fd03cc0a5 for 0.01 BTCUSDT at $96336.00
+2025-05-03 15:18:07,498 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96336.00
+2025-05-03 15:18:07,499 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:18:02.403958. Skipping trade.
+2025-05-03 15:18:12,375 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96336.00
+2025-05-03 15:18:12,377 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:18:02.403958. Skipping trade.
+2025-05-03 15:18:17,339 - __main__ - INFO - Ensemble prediction: UP with 0.86 confidence for BTCUSDT at $96340.87
+2025-05-03 15:18:17,340 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:18:02.403958. Skipping trade.
+2025-05-03 15:18:22,363 - __main__ - INFO - Ensemble prediction: UP with 0.87 confidence for BTCUSDT at $96341.05
+2025-05-03 15:18:22,366 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:18:02.403958. Skipping trade.
+2025-05-03 15:18:27,334 - __main__ - INFO - Ensemble prediction: UP with 0.86 confidence for BTCUSDT at $96344.36
+2025-05-03 15:18:27,335 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:18:02.403958. Skipping trade.
+2025-05-03 15:18:32,334 - __main__ - INFO - Ensemble prediction: UP with 0.86 confidence for BTCUSDT at $96357.77
+2025-05-03 15:18:32,337 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:18:02.403958. Skipping trade.
+2025-05-03 15:18:37,354 - __main__ - INFO - Ensemble prediction: UP with 0.86 confidence for BTCUSDT at $96357.76
+2025-05-03 15:18:37,355 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:18:02.403958. Skipping trade.
+2025-05-03 15:18:42,357 - __main__ - INFO - Ensemble prediction: UP with 0.92 confidence for BTCUSDT at $96357.76
+2025-05-03 15:18:42,361 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:18:02.403958. Skipping trade.
+2025-05-03 15:18:42,386 - __main__ - INFO - Performance data saved to data/BTCUSDT_ensemble_performance_20250503.csv
+2025-05-03 15:18:42,390 - __main__ - INFO - Bot statistics: loops=40, runtime=202.0s, predictions=40, errors=0, avg_prediction_time=0.380s, avg_trade_time=1.014s
+2025-05-03 15:18:47,551 - __main__ - INFO - Ensemble prediction: UP with 0.87 confidence for BTCUSDT at $96351.96
+2025-05-03 15:18:47,552 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:18:02.403958. Skipping trade.
+2025-05-03 15:18:52,385 - __main__ - INFO - Ensemble prediction: UP with 0.84 confidence for BTCUSDT at $96351.97
+2025-05-03 15:18:52,387 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:18:02.403958. Skipping trade.
+2025-05-03 15:18:57,378 - __main__ - INFO - Ensemble prediction: UP with 0.83 confidence for BTCUSDT at $96351.96
+2025-05-03 15:18:58,395 - __main__ - INFO - Buy transaction executed: 6d54228a-77d9-4d8c-8061-5407e792b7f9 for 0.01 BTCUSDT at $96351.96
+2025-05-03 15:19:02,357 - __main__ - INFO - Ensemble prediction: UP with 0.88 confidence for BTCUSDT at $96351.96
+2025-05-03 15:19:02,358 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:18:57.380469. Skipping trade.
+2025-05-03 15:19:07,391 - __main__ - INFO - Ensemble prediction: UP with 0.87 confidence for BTCUSDT at $96351.97
+2025-05-03 15:19:07,393 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:18:57.380469. Skipping trade.
+2025-05-03 15:19:12,445 - __main__ - INFO - Ensemble prediction: UP with 0.83 confidence for BTCUSDT at $96351.96
+2025-05-03 15:19:12,447 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:18:57.380469. Skipping trade.
+2025-05-03 15:19:17,386 - __main__ - INFO - Ensemble prediction: UP with 0.95 confidence for BTCUSDT at $96341.40
+2025-05-03 15:19:17,387 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:18:57.380469. Skipping trade.
+2025-05-03 15:19:22,378 - __main__ - INFO - Ensemble prediction: UP with 0.84 confidence for BTCUSDT at $96341.41
+2025-05-03 15:19:22,380 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:18:57.380469. Skipping trade.
+2025-05-03 15:19:27,374 - __main__ - INFO - Ensemble prediction: UP with 0.83 confidence for BTCUSDT at $96341.41
+2025-05-03 15:19:27,375 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:18:57.380469. Skipping trade.
+2025-05-03 15:19:32,385 - __main__ - INFO - Ensemble prediction: UP with 0.88 confidence for BTCUSDT at $96341.41
+2025-05-03 15:19:32,387 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:18:57.380469. Skipping trade.
+2025-05-03 15:19:32,407 - __main__ - INFO - Performance data saved to data/BTCUSDT_ensemble_performance_20250503.csv
+2025-05-03 15:19:32,409 - __main__ - INFO - Bot statistics: loops=50, runtime=252.0s, predictions=50, errors=0, avg_prediction_time=0.384s, avg_trade_time=1.012s
+2025-05-03 15:19:37,388 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96341.41
+2025-05-03 15:19:37,389 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:18:57.380469. Skipping trade.
+2025-05-03 15:19:42,349 - __main__ - INFO - Ensemble prediction: UP with 0.95 confidence for BTCUSDT at $96337.12
+2025-05-03 15:19:42,350 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:18:57.380469. Skipping trade.
+2025-05-03 15:19:47,408 - __main__ - INFO - Ensemble prediction: UP with 0.84 confidence for BTCUSDT at $96337.13
+2025-05-03 15:19:48,425 - __main__ - INFO - Buy transaction executed: 8005801f-67e5-4eb2-8ef7-123004aa7821 for 0.01 BTCUSDT at $96337.13
+2025-05-03 15:19:57,538 - __main__ - INFO - Ensemble prediction: UP with 0.83 confidence for BTCUSDT at $96337.13
+2025-05-03 15:19:57,544 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:19:47.409686. Skipping trade.
+2025-05-03 15:20:02,406 - __main__ - INFO - Ensemble prediction: UP with 0.88 confidence for BTCUSDT at $96337.13
+2025-05-03 15:20:02,407 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:19:47.409686. Skipping trade.
+2025-05-03 15:20:07,390 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96337.13
+2025-05-03 15:20:07,392 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:19:47.409686. Skipping trade.
+2025-05-03 15:20:12,366 - __main__ - INFO - Ensemble prediction: UP with 0.95 confidence for BTCUSDT at $96335.10
+2025-05-03 15:20:12,370 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:19:47.409686. Skipping trade.
+2025-05-03 15:20:17,365 - __main__ - INFO - Ensemble prediction: UP with 0.84 confidence for BTCUSDT at $96335.10
+2025-05-03 15:20:17,368 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:19:47.409686. Skipping trade.
+2025-05-03 15:20:22,399 - __main__ - INFO - Ensemble prediction: UP with 0.83 confidence for BTCUSDT at $96335.10
+2025-05-03 15:20:22,401 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:19:47.409686. Skipping trade.
+2025-05-03 15:20:27,359 - __main__ - INFO - Ensemble prediction: UP with 0.95 confidence for BTCUSDT at $96325.40
+2025-05-03 15:20:27,362 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:19:47.409686. Skipping trade.
+2025-05-03 15:20:27,380 - __main__ - INFO - Performance data saved to data/BTCUSDT_ensemble_performance_20250503.csv
+2025-05-03 15:20:27,383 - __main__ - INFO - Bot statistics: loops=61, runtime=307.0s, predictions=60, errors=0, avg_prediction_time=0.383s, avg_trade_time=1.012s
+2025-05-03 15:20:32,549 - __main__ - INFO - Ensemble prediction: UP with 0.95 confidence for BTCUSDT at $96304.43
+2025-05-03 15:20:32,554 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:19:47.409686. Skipping trade.
+2025-05-03 15:20:37,320 - __main__ - INFO - Ensemble prediction: UP with 0.84 confidence for BTCUSDT at $96300.02
+2025-05-03 15:20:37,321 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:19:47.409686. Skipping trade.
+2025-05-03 15:20:42,375 - __main__ - INFO - Ensemble prediction: UP with 0.83 confidence for BTCUSDT at $96300.02
+2025-05-03 15:20:43,384 - __main__ - INFO - Buy transaction executed: f2c2a701-0785-4cb1-bc61-75b562c03378 for 0.01 BTCUSDT at $96300.02
+2025-05-03 15:20:47,305 - __main__ - INFO - Ensemble prediction: UP with 0.87 confidence for BTCUSDT at $96300.01
+2025-05-03 15:20:47,306 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:20:42.376653. Skipping trade.
+2025-05-03 15:20:52,326 - __main__ - INFO - Ensemble prediction: UP with 0.95 confidence for BTCUSDT at $96293.65
+2025-05-03 15:20:52,326 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:20:42.376653. Skipping trade.
+2025-05-03 15:20:57,326 - __main__ - INFO - Ensemble prediction: UP with 0.84 confidence for BTCUSDT at $96293.66
+2025-05-03 15:20:57,327 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:20:42.376653. Skipping trade.
+2025-05-03 15:21:02,361 - __main__ - INFO - Ensemble prediction: UP with 0.83 confidence for BTCUSDT at $96293.65
+2025-05-03 15:21:02,362 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:20:42.376653. Skipping trade.
+2025-05-03 15:21:07,320 - __main__ - INFO - Ensemble prediction: UP with 0.88 confidence for BTCUSDT at $96293.66
+2025-05-03 15:21:07,321 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:20:42.376653. Skipping trade.
+2025-05-03 15:21:12,329 - __main__ - INFO - Ensemble prediction: UP with 0.83 confidence for BTCUSDT at $96293.65
+2025-05-03 15:21:12,330 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:20:42.376653. Skipping trade.
+2025-05-03 15:21:17,330 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96293.66
+2025-05-03 15:21:17,331 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:20:42.376653. Skipping trade.
+2025-05-03 15:21:17,336 - __main__ - INFO - Performance data saved to data/BTCUSDT_ensemble_performance_20250503.csv
+2025-05-03 15:21:17,337 - __main__ - INFO - Bot statistics: loops=71, runtime=356.9s, predictions=70, errors=0, avg_prediction_time=0.376s, avg_trade_time=1.011s
+2025-05-03 15:21:22,327 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96293.66
+2025-05-03 15:21:22,327 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:20:42.376653. Skipping trade.
+2025-05-03 15:21:27,331 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96293.66
+2025-05-03 15:21:27,332 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:20:42.376653. Skipping trade.
+2025-05-03 15:21:32,396 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96293.66
+2025-05-03 15:21:33,405 - __main__ - INFO - Buy transaction executed: 0b937720-b7b5-43dd-a401-34796cb51bd8 for 0.01 BTCUSDT at $96293.66
+2025-05-03 15:21:37,536 - __main__ - INFO - Ensemble prediction: UP with 0.86 confidence for BTCUSDT at $96300.02
+2025-05-03 15:21:37,538 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:21:32.397100. Skipping trade.
+2025-05-03 15:21:42,363 - __main__ - INFO - Ensemble prediction: UP with 0.87 confidence for BTCUSDT at $96300.02
+2025-05-03 15:21:42,365 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:21:32.397100. Skipping trade.
+2025-05-03 15:21:47,363 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96300.02
+2025-05-03 15:21:47,365 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:21:32.397100. Skipping trade.
+2025-05-03 15:21:52,381 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96300.02
+2025-05-03 15:21:52,382 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:21:32.397100. Skipping trade.
+2025-05-03 15:21:57,354 - __main__ - INFO - Ensemble prediction: UP with 0.86 confidence for BTCUSDT at $96300.03
+2025-05-03 15:21:57,355 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:21:32.397100. Skipping trade.
+2025-05-03 15:22:02,362 - __main__ - INFO - Ensemble prediction: UP with 0.87 confidence for BTCUSDT at $96300.03
+2025-05-03 15:22:02,363 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:21:32.397100. Skipping trade.
+2025-05-03 15:22:07,357 - __main__ - INFO - Ensemble prediction: UP with 0.83 confidence for BTCUSDT at $96300.02
+2025-05-03 15:22:07,358 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:21:32.397100. Skipping trade.
+2025-05-03 15:22:07,371 - __main__ - INFO - Performance data saved to data/BTCUSDT_ensemble_performance_20250503.csv
+2025-05-03 15:22:07,373 - __main__ - INFO - Bot statistics: loops=81, runtime=407.0s, predictions=80, errors=0, avg_prediction_time=0.373s, avg_trade_time=1.010s
+2025-05-03 15:22:12,348 - __main__ - INFO - Ensemble prediction: UP with 0.83 confidence for BTCUSDT at $96300.02
+2025-05-03 15:22:12,350 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:21:32.397100. Skipping trade.
+2025-05-03 15:22:17,430 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96300.03
+2025-05-03 15:22:17,431 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:21:32.397100. Skipping trade.
+2025-05-03 15:22:22,380 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96300.03
+2025-05-03 15:22:22,382 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:21:32.397100. Skipping trade.
+2025-05-03 15:22:27,396 - __main__ - INFO - Ensemble prediction: UP with 0.83 confidence for BTCUSDT at $96300.02
+2025-05-03 15:22:28,407 - __main__ - INFO - Buy transaction executed: e5cf3a7d-64e5-4942-b419-3fce754a5b97 for 0.01 BTCUSDT at $96300.02
+2025-05-03 15:22:32,352 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96300.03
+2025-05-03 15:22:32,353 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:22:27.397363. Skipping trade.
+2025-05-03 15:22:37,382 - __main__ - INFO - Ensemble prediction: UP with 0.84 confidence for BTCUSDT at $96300.02
+2025-05-03 15:22:37,384 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:22:27.397363. Skipping trade.
+2025-05-03 15:22:42,394 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96300.03
+2025-05-03 15:22:42,395 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:22:27.397363. Skipping trade.
+2025-05-03 15:22:47,360 - __main__ - INFO - Ensemble prediction: UP with 0.83 confidence for BTCUSDT at $96300.02
+2025-05-03 15:22:47,361 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:22:27.397363. Skipping trade.
+2025-05-03 15:22:52,396 - __main__ - INFO - Ensemble prediction: UP with 0.83 confidence for BTCUSDT at $96300.02
+2025-05-03 15:22:52,397 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:22:27.397363. Skipping trade.
+2025-05-03 15:22:57,380 - __main__ - INFO - Ensemble prediction: UP with 0.87 confidence for BTCUSDT at $96300.03
+2025-05-03 15:22:57,381 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:22:27.397363. Skipping trade.
+2025-05-03 15:22:57,393 - __main__ - INFO - Performance data saved to data/BTCUSDT_ensemble_performance_20250503.csv
+2025-05-03 15:22:57,395 - __main__ - INFO - Bot statistics: loops=91, runtime=457.0s, predictions=90, errors=0, avg_prediction_time=0.370s, avg_trade_time=1.009s
+2025-05-03 15:23:02,331 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96300.03
+2025-05-03 15:23:02,331 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:22:27.397363. Skipping trade.
+2025-05-03 15:23:07,322 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96300.03
+2025-05-03 15:23:07,323 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:22:27.397363. Skipping trade.
+2025-05-03 15:23:12,316 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96300.03
+2025-05-03 15:23:12,317 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:22:27.397363. Skipping trade.
+2025-05-03 15:23:17,346 - __main__ - INFO - Ensemble prediction: UP with 0.88 confidence for BTCUSDT at $96300.03
+2025-05-03 15:23:17,346 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:22:27.397363. Skipping trade.
+2025-05-03 15:23:22,557 - __main__ - INFO - Ensemble prediction: UP with 0.95 confidence for BTCUSDT at $96300.02
+2025-05-03 15:23:23,603 - __main__ - INFO - Buy transaction executed: ed7b5d2f-05b2-46ec-8b6f-72b12f34703e for 0.01 BTCUSDT at $96300.02
+2025-05-03 15:23:32,365 - __main__ - INFO - Ensemble prediction: UP with 0.84 confidence for BTCUSDT at $96300.02
+2025-05-03 15:23:32,367 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:23:22.558939. Skipping trade.
+2025-05-03 15:23:37,391 - __main__ - INFO - Ensemble prediction: UP with 0.95 confidence for BTCUSDT at $96295.05
+2025-05-03 15:23:37,392 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:23:22.558939. Skipping trade.
+2025-05-03 15:23:42,378 - __main__ - INFO - Ensemble prediction: UP with 0.84 confidence for BTCUSDT at $96295.06
+2025-05-03 15:23:42,379 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:23:22.558939. Skipping trade.
+2025-05-03 15:23:47,381 - __main__ - INFO - Ensemble prediction: UP with 0.83 confidence for BTCUSDT at $96295.06
+2025-05-03 15:23:47,382 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:23:22.558939. Skipping trade.
+2025-05-03 15:23:52,356 - __main__ - INFO - Ensemble prediction: UP with 0.88 confidence for BTCUSDT at $96295.06
+2025-05-03 15:23:52,357 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:23:22.558939. Skipping trade.
+2025-05-03 15:23:52,370 - __main__ - INFO - Performance data saved to data/BTCUSDT_ensemble_performance_20250503.csv
+2025-05-03 15:23:52,371 - __main__ - INFO - Bot statistics: loops=102, runtime=512.0s, predictions=100, errors=0, avg_prediction_time=0.367s, avg_trade_time=1.010s
+2025-05-03 15:23:57,388 - __main__ - INFO - Ensemble prediction: UP with 0.84 confidence for BTCUSDT at $96295.05
+2025-05-03 15:23:57,389 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:23:22.558939. Skipping trade.
+2025-05-03 15:24:02,437 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96295.06
+2025-05-03 15:24:02,438 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:23:22.558939. Skipping trade.
+2025-05-03 15:24:07,369 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96295.06
+2025-05-03 15:24:07,370 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:23:22.558939. Skipping trade.
+2025-05-03 15:24:12,350 - __main__ - INFO - Ensemble prediction: UP with 0.84 confidence for BTCUSDT at $96295.05
+2025-05-03 15:24:12,350 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:23:22.558939. Skipping trade.
+2025-05-03 15:24:17,386 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96295.06
+2025-05-03 15:24:18,398 - __main__ - INFO - Buy transaction executed: 67e904ff-281b-4913-9931-bacaae051722 for 0.01 BTCUSDT at $96295.06
+2025-05-03 15:24:22,395 - __main__ - INFO - Ensemble prediction: UP with 0.95 confidence for BTCUSDT at $96274.83
+2025-05-03 15:24:22,396 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:24:17.386875. Skipping trade.
+2025-05-03 15:24:27,364 - __main__ - INFO - Ensemble prediction: UP with 0.84 confidence for BTCUSDT at $96274.83
+2025-05-03 15:24:27,365 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:24:17.386875. Skipping trade.
+2025-05-03 15:24:32,366 - __main__ - INFO - Ensemble prediction: UP with 0.84 confidence for BTCUSDT at $96266.29
+2025-05-03 15:24:32,368 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:24:17.386875. Skipping trade.
+2025-05-03 15:24:37,416 - __main__ - INFO - Ensemble prediction: UP with 0.82 confidence for BTCUSDT at $96255.66
+2025-05-03 15:24:37,417 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:24:17.386875. Skipping trade.
+2025-05-03 15:24:42,436 - __main__ - INFO - Ensemble prediction: UP with 0.84 confidence for BTCUSDT at $96252.73
+2025-05-03 15:24:42,438 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:24:17.386875. Skipping trade.
+2025-05-03 15:24:42,456 - __main__ - INFO - Performance data saved to data/BTCUSDT_ensemble_performance_20250503.csv
+2025-05-03 15:24:42,458 - __main__ - INFO - Bot statistics: loops=112, runtime=562.1s, predictions=110, errors=0, avg_prediction_time=0.365s, avg_trade_time=1.010s
+2025-05-03 15:24:47,371 - __main__ - INFO - Ensemble prediction: UP with 0.83 confidence for BTCUSDT at $96252.72
+2025-05-03 15:24:47,372 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:24:17.386875. Skipping trade.
+2025-05-03 15:24:52,420 - __main__ - INFO - Ensemble prediction: UP with 0.88 confidence for BTCUSDT at $96252.72
+2025-05-03 15:24:52,421 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:24:17.386875. Skipping trade.
+2025-05-03 15:24:57,382 - __main__ - INFO - Ensemble prediction: UP with 0.95 confidence for BTCUSDT at $96241.78
+2025-05-03 15:24:57,383 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:24:17.386875. Skipping trade.
+2025-05-03 15:25:02,502 - __main__ - INFO - Ensemble prediction: UP with 0.84 confidence for BTCUSDT at $96241.78
+2025-05-03 15:25:02,503 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:24:17.386875. Skipping trade.
+2025-05-03 15:25:07,398 - __main__ - INFO - Ensemble prediction: UP with 0.96 confidence for BTCUSDT at $96230.17
+2025-05-03 15:25:08,415 - __main__ - INFO - Buy transaction executed: 21188517-ded0-4b01-aa46-6e9fb6eaa84e for 0.01 BTCUSDT at $96230.17
+2025-05-03 15:25:12,414 - __main__ - INFO - Ensemble prediction: UP with 0.83 confidence for BTCUSDT at $96230.16
+2025-05-03 15:25:12,415 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:25:07.400212. Skipping trade.
+2025-05-03 15:25:17,383 - __main__ - INFO - Ensemble prediction: UP with 0.83 confidence for BTCUSDT at $96230.17
+2025-05-03 15:25:17,384 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:25:07.400212. Skipping trade.
+2025-05-03 15:25:22,406 - __main__ - INFO - Ensemble prediction: UP with 0.88 confidence for BTCUSDT at $96230.17
+2025-05-03 15:25:22,407 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:25:07.400212. Skipping trade.
+2025-05-03 15:25:27,394 - __main__ - INFO - Ensemble prediction: UP with 0.84 confidence for BTCUSDT at $96230.16
+2025-05-03 15:25:27,395 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:25:07.400212. Skipping trade.
+2025-05-03 15:25:32,393 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96230.17
+2025-05-03 15:25:32,394 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:25:07.400212. Skipping trade.
+2025-05-03 15:25:32,408 - __main__ - INFO - Performance data saved to data/BTCUSDT_ensemble_performance_20250503.csv
+2025-05-03 15:25:32,410 - __main__ - INFO - Bot statistics: loops=122, runtime=612.0s, predictions=120, errors=0, avg_prediction_time=0.364s, avg_trade_time=1.009s
+2025-05-03 15:25:37,405 - __main__ - INFO - Ensemble prediction: UP with 0.84 confidence for BTCUSDT at $96230.16
+2025-05-03 15:25:37,406 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:25:07.400212. Skipping trade.
+2025-05-03 15:25:42,587 - __main__ - INFO - Ensemble prediction: UP with 0.95 confidence for BTCUSDT at $96227.96
+2025-05-03 15:25:42,588 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:25:07.400212. Skipping trade.
+2025-05-03 15:25:47,453 - __main__ - INFO - Ensemble prediction: UP with 0.95 confidence for BTCUSDT at $96204.63
+2025-05-03 15:25:47,454 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:25:07.400212. Skipping trade.
+2025-05-03 15:25:52,408 - __main__ - INFO - Ensemble prediction: UP with 0.84 confidence for BTCUSDT at $96204.63
+2025-05-03 15:25:52,409 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:25:07.400212. Skipping trade.
+2025-05-03 15:25:57,427 - __main__ - INFO - Ensemble prediction: UP with 0.83 confidence for BTCUSDT at $96204.63
+2025-05-03 15:25:58,437 - __main__ - INFO - Buy transaction executed: 0d2b1a9b-604a-43ba-b7f3-13164b629d30 for 0.01 BTCUSDT at $96204.63
+2025-05-03 15:26:02,424 - __main__ - INFO - Ensemble prediction: UP with 0.82 confidence for BTCUSDT at $96188.97
+2025-05-03 15:26:02,425 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:25:57.427984. Skipping trade.
+2025-05-03 15:26:07,439 - __main__ - INFO - Ensemble prediction: UP with 0.94 confidence for BTCUSDT at $96181.99
+2025-05-03 15:26:07,440 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:25:57.427984. Skipping trade.
+2025-05-03 15:26:12,380 - __main__ - INFO - Ensemble prediction: UP with 0.88 confidence for BTCUSDT at $96196.00
+2025-05-03 15:26:12,381 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:25:57.427984. Skipping trade.
+2025-05-03 15:26:17,406 - __main__ - INFO - Ensemble prediction: UP with 0.90 confidence for BTCUSDT at $96196.00
+2025-05-03 15:26:17,407 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:25:57.427984. Skipping trade.
+2025-05-03 15:26:22,365 - __main__ - INFO - Ensemble prediction: UP with 0.93 confidence for BTCUSDT at $96195.99
+2025-05-03 15:26:22,365 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:25:57.427984. Skipping trade.
+2025-05-03 15:26:22,379 - __main__ - INFO - Performance data saved to data/BTCUSDT_ensemble_performance_20250503.csv
+2025-05-03 15:26:22,380 - __main__ - INFO - Bot statistics: loops=132, runtime=662.0s, predictions=130, errors=0, avg_prediction_time=0.364s, avg_trade_time=1.009s
+2025-05-03 15:26:27,433 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96195.99
+2025-05-03 15:26:27,433 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:25:57.427984. Skipping trade.
+2025-05-03 15:26:32,457 - __main__ - INFO - Ensemble prediction: UP with 0.86 confidence for BTCUSDT at $96204.63
+2025-05-03 15:26:32,458 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:25:57.427984. Skipping trade.
+2025-05-03 15:26:37,458 - __main__ - INFO - Ensemble prediction: UP with 0.86 confidence for BTCUSDT at $96221.66
+2025-05-03 15:26:37,459 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:25:57.427984. Skipping trade.
+2025-05-03 15:26:42,437 - __main__ - INFO - Ensemble prediction: UP with 0.88 confidence for BTCUSDT at $96221.65
+2025-05-03 15:26:42,439 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:25:57.427984. Skipping trade.
+2025-05-03 15:26:47,470 - __main__ - INFO - Ensemble prediction: UP with 0.93 confidence for BTCUSDT at $96221.66
+2025-05-03 15:26:48,479 - __main__ - INFO - Buy transaction executed: 37282b1c-93ef-47af-a6d2-c4608c0fe56c for 0.01 BTCUSDT at $96221.66
+2025-05-03 15:26:52,398 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96221.66
+2025-05-03 15:26:52,399 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:26:47.470775. Skipping trade.
+2025-05-03 15:26:57,435 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96221.66
+2025-05-03 15:26:57,436 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:26:47.470775. Skipping trade.
+2025-05-03 15:27:02,421 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96221.66
+2025-05-03 15:27:02,422 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:26:47.470775. Skipping trade.
+2025-05-03 15:27:07,408 - __main__ - INFO - Ensemble prediction: UP with 0.88 confidence for BTCUSDT at $96221.66
+2025-05-03 15:27:07,409 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:26:47.470775. Skipping trade.
+2025-05-03 15:27:12,456 - __main__ - INFO - Ensemble prediction: UP with 0.95 confidence for BTCUSDT at $96221.65
+2025-05-03 15:27:12,457 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:26:47.470775. Skipping trade.
+2025-05-03 15:27:12,474 - __main__ - INFO - Performance data saved to data/BTCUSDT_ensemble_performance_20250503.csv
+2025-05-03 15:27:12,475 - __main__ - INFO - Bot statistics: loops=142, runtime=712.1s, predictions=140, errors=0, avg_prediction_time=0.365s, avg_trade_time=1.009s
+2025-05-03 15:27:17,437 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96221.66
+2025-05-03 15:27:17,439 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:26:47.470775. Skipping trade.
+2025-05-03 15:27:22,393 - __main__ - INFO - Ensemble prediction: UP with 0.84 confidence for BTCUSDT at $96221.65
+2025-05-03 15:27:22,394 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:26:47.470775. Skipping trade.
+2025-05-03 15:27:27,467 - __main__ - INFO - Ensemble prediction: UP with 0.83 confidence for BTCUSDT at $96221.65
+2025-05-03 15:27:27,469 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:26:47.470775. Skipping trade.
+2025-05-03 15:27:32,440 - __main__ - INFO - Ensemble prediction: UP with 0.88 confidence for BTCUSDT at $96221.65
+2025-05-03 15:27:32,441 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:26:47.470775. Skipping trade.
+2025-05-03 15:27:37,418 - __main__ - INFO - Ensemble prediction: UP with 0.87 confidence for BTCUSDT at $96221.66
+2025-05-03 15:27:37,418 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:26:47.470775. Skipping trade.
+2025-05-03 15:27:42,388 - __main__ - INFO - Ensemble prediction: UP with 0.87 confidence for BTCUSDT at $96221.66
+2025-05-03 15:27:43,397 - __main__ - INFO - Buy transaction executed: c9a7a8cc-4511-4724-9bad-8ea67d7a6205 for 0.01 BTCUSDT at $96221.66
+2025-05-03 15:27:47,386 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96221.66
+2025-05-03 15:27:47,387 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:27:42.388740. Skipping trade.
+2025-05-03 15:27:52,456 - __main__ - INFO - Ensemble prediction: UP with 0.84 confidence for BTCUSDT at $96221.65
+2025-05-03 15:27:52,457 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:27:42.388740. Skipping trade.
+2025-05-03 15:27:57,355 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96221.66
+2025-05-03 15:27:57,355 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:27:42.388740. Skipping trade.
+2025-05-03 15:28:02,393 - __main__ - INFO - Ensemble prediction: UP with 0.84 confidence for BTCUSDT at $96221.65
+2025-05-03 15:28:02,393 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:27:42.388740. Skipping trade.
+2025-05-03 15:28:02,401 - __main__ - INFO - Performance data saved to data/BTCUSDT_ensemble_performance_20250503.csv
+2025-05-03 15:28:02,401 - __main__ - INFO - Bot statistics: loops=152, runtime=762.0s, predictions=150, errors=0, avg_prediction_time=0.363s, avg_trade_time=1.009s
+2025-05-03 15:28:07,371 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96221.66
+2025-05-03 15:28:07,372 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:27:42.388740. Skipping trade.
+2025-05-03 15:28:12,351 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96221.66
+2025-05-03 15:28:12,351 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:27:42.388740. Skipping trade.
+2025-05-03 15:28:17,450 - __main__ - INFO - Ensemble prediction: UP with 0.84 confidence for BTCUSDT at $96221.65
+2025-05-03 15:28:17,450 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:27:42.388740. Skipping trade.
+2025-05-03 15:28:22,378 - __main__ - INFO - Ensemble prediction: UP with 0.83 confidence for BTCUSDT at $96221.65
+2025-05-03 15:28:22,379 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:27:42.388740. Skipping trade.
+2025-05-03 15:28:27,421 - __main__ - INFO - Ensemble prediction: UP with 0.83 confidence for BTCUSDT at $96221.65
+2025-05-03 15:28:27,421 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:27:42.388740. Skipping trade.
+2025-05-03 15:28:32,429 - __main__ - INFO - Ensemble prediction: UP with 0.87 confidence for BTCUSDT at $96221.66
+2025-05-03 15:28:33,440 - __main__ - INFO - Buy transaction executed: 94e2b26a-342f-4b8e-bbe1-0ea0a0b095b9 for 0.01 BTCUSDT at $96221.66
+2025-05-03 15:28:37,388 - __main__ - INFO - Ensemble prediction: UP with 0.87 confidence for BTCUSDT at $96221.66
+2025-05-03 15:28:37,389 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:28:32.430048. Skipping trade.
+2025-05-03 15:28:42,363 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96221.66
+2025-05-03 15:28:42,363 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:28:32.430048. Skipping trade.
+2025-05-03 15:28:47,393 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96221.66
+2025-05-03 15:28:47,394 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:28:32.430048. Skipping trade.
+2025-05-03 15:28:52,464 - __main__ - INFO - Ensemble prediction: UP with 0.88 confidence for BTCUSDT at $96221.66
+2025-05-03 15:28:52,467 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:28:32.430048. Skipping trade.
+2025-05-03 15:28:52,484 - __main__ - INFO - Performance data saved to data/BTCUSDT_ensemble_performance_20250503.csv
+2025-05-03 15:28:52,485 - __main__ - INFO - Bot statistics: loops=162, runtime=812.1s, predictions=160, errors=0, avg_prediction_time=0.361s, avg_trade_time=1.008s
+2025-05-03 15:28:57,397 - __main__ - INFO - Ensemble prediction: UP with 0.88 confidence for BTCUSDT at $96221.66
+2025-05-03 15:28:57,398 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:28:32.430048. Skipping trade.
+2025-05-03 15:29:02,414 - __main__ - INFO - Ensemble prediction: UP with 0.95 confidence for BTCUSDT at $96221.65
+2025-05-03 15:29:02,414 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:28:32.430048. Skipping trade.
+2025-05-03 15:29:07,406 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96221.66
+2025-05-03 15:29:07,407 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:28:32.430048. Skipping trade.
+2025-05-03 15:29:12,599 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96221.66
+2025-05-03 15:29:12,600 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:28:32.430048. Skipping trade.
+2025-05-03 15:29:17,426 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96221.66
+2025-05-03 15:29:17,427 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:28:32.430048. Skipping trade.
+2025-05-03 15:29:22,440 - __main__ - INFO - Ensemble prediction: UP with 0.91 confidence for BTCUSDT at $96221.66
+2025-05-03 15:29:23,452 - __main__ - INFO - Buy transaction executed: aba92490-9a8f-433e-90ae-5d0f220eb370 for 0.01 BTCUSDT at $96221.66
+2025-05-03 15:29:27,406 - __main__ - INFO - Ensemble prediction: UP with 0.88 confidence for BTCUSDT at $96221.66
+2025-05-03 15:29:27,407 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:29:22.441249. Skipping trade.
+2025-05-03 15:29:32,440 - __main__ - INFO - Ensemble prediction: UP with 0.88 confidence for BTCUSDT at $96221.66
+2025-05-03 15:29:32,441 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 15:29:22.441249. Skipping trade.
+2025-05-03 15:32:24,539 - __main__ - INFO - Initializing advanced trading bot with: symbol=BTCUSDT, window_size=5, check_interval=300s, confidence_threshold=0.7, trade_amount=0.01, mock_mode=True, model_type=ensemble
+2025-05-03 15:32:25,448 - __main__ - INFO - Checking availability of requested model(s): ensemble
+2025-05-03 15:32:25,448 - __main__ - INFO - RandomForest model ready: True
+2025-05-03 15:32:25,448 - __main__ - INFO - XGBoost model ready: True
+2025-05-03 15:32:25,449 - __main__ - INFO - Advanced trading bot started at 2025-05-03 15:32:25.449011
+2025-05-03 15:32:25,458 - __main__ - INFO - Initializing price window with initial readings
+2025-05-03 15:32:32,006 - __main__ - INFO - Starting main trading loop
+2025-05-03 15:32:32,335 - __main__ - INFO - Ensemble prediction: UP with 0.60 confidence for BTCUSDT at $96215.96
+2025-05-03 15:32:32,336 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.7. No trade executed.
+2025-05-03 17:36:22,856 - __main__ - INFO - Checking availability of requested model(s): ensemble
+2025-05-03 17:36:51,175 - __main__ - INFO - Checking availability of requested model(s): ensemble
+2025-05-03 17:36:51,175 - __main__ - INFO - RandomForest model ready: True
+2025-05-03 17:36:51,176 - __main__ - INFO - XGBoost model ready: True
+2025-05-03 17:36:51,176 - __main__ - INFO - Initializing advanced trading bot with: symbol=BTCUSDT, window_size=5, check_interval=1s, confidence_threshold=0.6, trade_amount=0.01, mock_mode=True, model_type=ensemble
+2025-05-03 17:36:51,176 - __main__ - INFO - Advanced trading bot started at 2025-05-03 17:36:51.176875
+2025-05-03 17:36:51,179 - __main__ - INFO - Ensemble voting configuration - ML: Enabled, Allora: Disabled, TEE: Disabled
+2025-05-03 17:36:51,179 - __main__ - INFO - Initializing price window with initial readings
+2025-05-03 17:36:57,783 - __main__ - INFO - Starting main trading loop
+2025-05-03 17:36:58,092 - __main__ - ERROR - Error in main loop (count: 1): too many values to unpack (expected 2)
+2025-05-03 17:36:58,785 - __main__ - INFO - Trading bot stopped at 2025-05-03 17:36:58.785561. Total runtime: 7.6s
+2025-05-03 17:36:58,788 - __main__ - INFO - Total loops: 1, Predictions: 0, Errors: 1

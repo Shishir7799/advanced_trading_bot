@@ -1,0 +1,20 @@
+[
+  {
+    "decision_id": "9688172724314eac",
+    "agent_id": "6fba96be9a8b",
+    "wallet_address": "0x1234567890abcdef1234567890abcdef12345678",
+    "timestamp": "2025-05-03T17:14:49.175168",
+    "type": "test",
+    "symbol": "BTCUSDT",
+    "direction": "buy",
+    "confidence": 0.85,
+    "price": 50000.0,
+    "strategy_id": "secure_ensemble",
+    "strategy_name": "Secure TEE-Enhanced Ensemble",
+    "bot_version": "0.1.0",
+    "amount": 0.1,
+    "models_used": [
+      "TestModel"
+    ]
+  }
+]

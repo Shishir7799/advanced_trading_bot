@@ -1,0 +1,708 @@
+2025-05-03 14:49:15,508 - __main__ - INFO - Starting crypto trading bot with args: Namespace(symbol='BTCUSDT', window=5, interval=15, confidence=0.6, amount=0.01, train=False, mock=True, debug=True)
+2025-05-03 14:49:15,512 - __main__ - INFO - Initializing trading bot with: symbol=BTCUSDT, window_size=5, check_interval=15s, confidence_threshold=0.6, trade_amount=0.01, mock_mode=True
+2025-05-03 14:49:17,105 - __main__ - DEBUG - Trading bot initialization complete
+2025-05-03 14:49:17,106 - __main__ - INFO - Trading bot started at 2025-05-03 14:49:17.106370
+2025-05-03 14:49:17,112 - __main__ - INFO - Starting trading bot for BTCUSDT with 5 window size
+2025-05-03 14:49:17,115 - __main__ - INFO - Check interval: 15 seconds
+2025-05-03 14:49:17,116 - __main__ - INFO - Confidence threshold: 0.6
+2025-05-03 14:49:17,116 - __main__ - INFO - Trade amount: 0.01 BTC
+2025-05-03 14:49:17,117 - __main__ - INFO - Mock mode: True
+2025-05-03 14:49:17,119 - __main__ - INFO - Initializing price window with initial readings
+2025-05-03 14:49:17,483 - __main__ - DEBUG - Initial price 1/5: $96313.66
+2025-05-03 14:49:18,747 - __main__ - DEBUG - Initial price 2/5: $96313.67
+2025-05-03 14:49:20,070 - __main__ - DEBUG - Initial price 3/5: $96313.67
+2025-05-03 14:49:21,343 - __main__ - DEBUG - Initial price 4/5: $96313.67
+2025-05-03 14:49:22,660 - __main__ - DEBUG - Initial price 5/5: $96313.67
+2025-05-03 14:49:23,663 - __main__ - INFO - Starting main trading loop
+2025-05-03 14:49:23,664 - __main__ - DEBUG - Starting loop 1 at 2025-05-03 14:49:23.664345
+2025-05-03 14:49:23,665 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:49:23,944 - __main__ - DEBUG - Price fetch completed in 0.278s
+2025-05-03 14:49:23,945 - __main__ - DEBUG - Price fetched: $96313.67 for BTCUSDT
+2025-05-03 14:49:23,951 - __main__ - DEBUG - Price window: [96313.67, 96313.67, 96313.67, 96313.67, 96313.67]
+2025-05-03 14:49:23,951 - __main__ - DEBUG - Making prediction with window: [96313.67, 96313.67, 96313.67, 96313.67, 96313.67]
+2025-05-03 14:49:23,968 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96313.67
+2025-05-03 14:49:23,969 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746263963, 'datetime': '2025-05-03 14:49:23', 'price_window': [96313.67, 96313.67, 96313.67, 96313.67, 96313.67], 'current_price': 96313.67, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.30100369453430176}
+2025-05-03 14:49:23,970 - __main__ - DEBUG - Prediction completed in 0.301s
+2025-05-03 14:49:23,971 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:49:23,971 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 14:49:23,972 - __main__ - DEBUG - Loop 1 completed in 0.308s
+2025-05-03 14:49:23,972 - __main__ - DEBUG - Sleeping for 14.7s
+2025-05-03 14:49:38,666 - __main__ - DEBUG - Starting loop 2 at 2025-05-03 14:49:38.666398
+2025-05-03 14:49:38,667 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:49:39,218 - __main__ - DEBUG - Price fetch completed in 0.550s
+2025-05-03 14:49:39,219 - __main__ - DEBUG - Price fetched: $96313.67 for BTCUSDT
+2025-05-03 14:49:39,223 - __main__ - DEBUG - Price window: [96313.67, 96313.67, 96313.67, 96313.67, 96313.67]
+2025-05-03 14:49:39,224 - __main__ - DEBUG - Making prediction with window: [96313.67, 96313.67, 96313.67, 96313.67, 96313.67]
+2025-05-03 14:49:39,242 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96313.67
+2025-05-03 14:49:39,244 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746263979, 'datetime': '2025-05-03 14:49:38', 'price_window': [96313.67, 96313.67, 96313.67, 96313.67, 96313.67], 'current_price': 96313.67, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.5714268684387207}
+2025-05-03 14:49:39,245 - __main__ - DEBUG - Prediction completed in 0.571s
+2025-05-03 14:49:39,246 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:49:39,247 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 14:49:39,248 - __main__ - DEBUG - Loop 2 completed in 0.582s
+2025-05-03 14:49:39,249 - __main__ - DEBUG - Sleeping for 14.4s
+2025-05-03 14:49:53,668 - __main__ - DEBUG - Starting loop 3 at 2025-05-03 14:49:53.668620
+2025-05-03 14:49:53,669 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:49:53,979 - __main__ - DEBUG - Price fetch completed in 0.309s
+2025-05-03 14:49:53,980 - __main__ - DEBUG - Price fetched: $96328.49 for BTCUSDT
+2025-05-03 14:49:53,983 - __main__ - DEBUG - Price window: [96313.67, 96313.67, 96313.67, 96313.67, 96328.49]
+2025-05-03 14:49:53,984 - __main__ - DEBUG - Making prediction with window: [96313.67, 96313.67, 96313.67, 96313.67, 96328.49]
+2025-05-03 14:49:53,998 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96328.49
+2025-05-03 14:49:53,998 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746263993, 'datetime': '2025-05-03 14:49:53', 'price_window': [96313.67, 96313.67, 96313.67, 96313.67, 96328.49], 'current_price': 96328.49, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.32567310333251953}
+2025-05-03 14:49:53,999 - __main__ - DEBUG - Prediction completed in 0.326s
+2025-05-03 14:49:54,000 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:49:54,001 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 14:49:54,002 - __main__ - DEBUG - Loop 3 completed in 0.333s
+2025-05-03 14:49:54,003 - __main__ - DEBUG - Sleeping for 14.7s
+2025-05-03 14:50:08,670 - __main__ - DEBUG - Starting loop 4 at 2025-05-03 14:50:08.670739
+2025-05-03 14:50:08,672 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:50:08,963 - __main__ - DEBUG - Price fetch completed in 0.290s
+2025-05-03 14:50:08,964 - __main__ - DEBUG - Price fetched: $96328.48 for BTCUSDT
+2025-05-03 14:50:08,968 - __main__ - DEBUG - Price window: [96313.67, 96313.67, 96313.67, 96328.49, 96328.48]
+2025-05-03 14:50:08,968 - __main__ - DEBUG - Making prediction with window: [96313.67, 96313.67, 96313.67, 96328.49, 96328.48]
+2025-05-03 14:50:08,985 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96328.48
+2025-05-03 14:50:08,986 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264008, 'datetime': '2025-05-03 14:50:08', 'price_window': [96313.67, 96313.67, 96313.67, 96328.49, 96328.48], 'current_price': 96328.48, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.31008100509643555}
+2025-05-03 14:50:08,987 - __main__ - DEBUG - Prediction completed in 0.310s
+2025-05-03 14:50:08,987 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:50:08,988 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 14:50:08,989 - __main__ - DEBUG - Loop 4 completed in 0.318s
+2025-05-03 14:50:08,989 - __main__ - DEBUG - Sleeping for 14.7s
+2025-05-03 14:50:23,672 - __main__ - DEBUG - Starting loop 5 at 2025-05-03 14:50:23.672593
+2025-05-03 14:50:23,674 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:50:24,023 - __main__ - DEBUG - Price fetch completed in 0.348s
+2025-05-03 14:50:24,024 - __main__ - DEBUG - Price fetched: $96328.49 for BTCUSDT
+2025-05-03 14:50:24,027 - __main__ - DEBUG - Price window: [96313.67, 96313.67, 96328.49, 96328.48, 96328.49]
+2025-05-03 14:50:24,028 - __main__ - DEBUG - Making prediction with window: [96313.67, 96313.67, 96328.49, 96328.48, 96328.49]
+2025-05-03 14:50:24,044 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96328.49
+2025-05-03 14:50:24,045 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264024, 'datetime': '2025-05-03 14:50:23', 'price_window': [96313.67, 96313.67, 96328.49, 96328.48, 96328.49], 'current_price': 96328.49, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.3656630516052246}
+2025-05-03 14:50:24,045 - __main__ - DEBUG - Prediction completed in 0.366s
+2025-05-03 14:50:24,046 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:50:24,047 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 14:50:24,048 - __main__ - DEBUG - Loop 5 completed in 0.376s
+2025-05-03 14:50:24,048 - __main__ - DEBUG - Sleeping for 14.6s
+2025-05-03 14:50:38,674 - __main__ - DEBUG - Starting loop 6 at 2025-05-03 14:50:38.674255
+2025-05-03 14:50:38,675 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:50:39,023 - __main__ - DEBUG - Price fetch completed in 0.347s
+2025-05-03 14:50:39,023 - __main__ - DEBUG - Price fetched: $96333.13 for BTCUSDT
+2025-05-03 14:50:39,027 - __main__ - DEBUG - Price window: [96313.67, 96328.49, 96328.48, 96328.49, 96333.13]
+2025-05-03 14:50:39,028 - __main__ - DEBUG - Making prediction with window: [96313.67, 96328.49, 96328.48, 96328.49, 96333.13]
+2025-05-03 14:50:39,045 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96333.13
+2025-05-03 14:50:39,046 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264039, 'datetime': '2025-05-03 14:50:38', 'price_window': [96313.67, 96328.49, 96328.48, 96328.49, 96333.13], 'current_price': 96333.13, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.3654787540435791}
+2025-05-03 14:50:39,047 - __main__ - DEBUG - Prediction completed in 0.365s
+2025-05-03 14:50:39,047 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:50:39,048 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 14:50:39,049 - __main__ - DEBUG - Loop 6 completed in 0.375s
+2025-05-03 14:50:39,050 - __main__ - DEBUG - Sleeping for 14.6s
+2025-05-03 14:50:53,676 - __main__ - DEBUG - Starting loop 7 at 2025-05-03 14:50:53.676311
+2025-05-03 14:50:53,677 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:50:54,106 - __main__ - DEBUG - Price fetch completed in 0.428s
+2025-05-03 14:50:54,107 - __main__ - DEBUG - Price fetched: $96333.12 for BTCUSDT
+2025-05-03 14:50:54,110 - __main__ - DEBUG - Price window: [96328.49, 96328.48, 96328.49, 96333.13, 96333.12]
+2025-05-03 14:50:54,111 - __main__ - DEBUG - Making prediction with window: [96328.49, 96328.48, 96328.49, 96333.13, 96333.12]
+2025-05-03 14:50:54,127 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96333.12
+2025-05-03 14:50:54,128 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264054, 'datetime': '2025-05-03 14:50:53', 'price_window': [96328.49, 96328.48, 96328.49, 96333.13, 96333.12], 'current_price': 96333.12, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.44635748863220215}
+2025-05-03 14:50:54,129 - __main__ - DEBUG - Prediction completed in 0.446s
+2025-05-03 14:50:54,130 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:50:54,131 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 14:50:54,132 - __main__ - DEBUG - Loop 7 completed in 0.456s
+2025-05-03 14:50:54,132 - __main__ - DEBUG - Sleeping for 14.5s
+2025-05-03 14:51:08,678 - __main__ - DEBUG - Starting loop 8 at 2025-05-03 14:51:08.677947
+2025-05-03 14:51:08,679 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:51:08,982 - __main__ - DEBUG - Price fetch completed in 0.302s
+2025-05-03 14:51:08,983 - __main__ - DEBUG - Price fetched: $96320.10 for BTCUSDT
+2025-05-03 14:51:08,986 - __main__ - DEBUG - Price window: [96328.48, 96328.49, 96333.13, 96333.12, 96320.1]
+2025-05-03 14:51:08,987 - __main__ - DEBUG - Making prediction with window: [96328.48, 96328.49, 96333.13, 96333.12, 96320.1]
+2025-05-03 14:51:09,004 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96320.10
+2025-05-03 14:51:09,005 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264069, 'datetime': '2025-05-03 14:51:08', 'price_window': [96328.48, 96328.49, 96333.13, 96333.12, 96320.1], 'current_price': 96320.1, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.3220193386077881}
+2025-05-03 14:51:09,006 - __main__ - DEBUG - Prediction completed in 0.322s
+2025-05-03 14:51:09,006 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:51:09,007 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 14:51:09,008 - __main__ - DEBUG - Loop 8 completed in 0.331s
+2025-05-03 14:51:09,009 - __main__ - DEBUG - Sleeping for 14.7s
+2025-05-03 14:51:23,679 - __main__ - DEBUG - Starting loop 9 at 2025-05-03 14:51:23.679839
+2025-05-03 14:51:23,681 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:51:24,067 - __main__ - DEBUG - Price fetch completed in 0.386s
+2025-05-03 14:51:24,068 - __main__ - DEBUG - Price fetched: $96320.09 for BTCUSDT
+2025-05-03 14:51:24,072 - __main__ - DEBUG - Price window: [96328.49, 96333.13, 96333.12, 96320.1, 96320.09]
+2025-05-03 14:51:24,073 - __main__ - DEBUG - Making prediction with window: [96328.49, 96333.13, 96333.12, 96320.1, 96320.09]
+2025-05-03 14:51:24,088 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96320.09
+2025-05-03 14:51:24,088 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264084, 'datetime': '2025-05-03 14:51:23', 'price_window': [96328.49, 96333.13, 96333.12, 96320.1, 96320.09], 'current_price': 96320.09, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.404132604598999}
+2025-05-03 14:51:24,089 - __main__ - DEBUG - Prediction completed in 0.404s
+2025-05-03 14:51:24,089 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:51:24,090 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 14:51:24,091 - __main__ - DEBUG - Loop 9 completed in 0.411s
+2025-05-03 14:51:24,091 - __main__ - DEBUG - Sleeping for 14.6s
+2025-05-03 14:51:38,681 - __main__ - DEBUG - Starting loop 10 at 2025-05-03 14:51:38.681345
+2025-05-03 14:51:38,682 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:51:38,988 - __main__ - DEBUG - Price fetch completed in 0.305s
+2025-05-03 14:51:38,989 - __main__ - DEBUG - Price fetched: $96320.10 for BTCUSDT
+2025-05-03 14:51:38,992 - __main__ - DEBUG - Price window: [96333.13, 96333.12, 96320.1, 96320.09, 96320.1]
+2025-05-03 14:51:38,993 - __main__ - DEBUG - Making prediction with window: [96333.13, 96333.12, 96320.1, 96320.09, 96320.1]
+2025-05-03 14:51:39,009 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96320.10
+2025-05-03 14:51:39,010 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264099, 'datetime': '2025-05-03 14:51:38', 'price_window': [96333.13, 96333.12, 96320.1, 96320.09, 96320.1], 'current_price': 96320.1, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.32321882247924805}
+2025-05-03 14:51:39,011 - __main__ - DEBUG - Prediction completed in 0.323s
+2025-05-03 14:51:39,012 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:51:39,012 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 14:51:39,018 - __main__ - INFO - Performance data saved to data/BTCUSDT_performance_20250503.csv
+2025-05-03 14:51:39,018 - __main__ - INFO - Bot statistics: loops=10, runtime=141.9s, predictions=10, errors=0, avg_prediction_time=0.374s, avg_trade_time=0.000s
+2025-05-03 14:51:39,019 - __main__ - DEBUG - Loop 10 completed in 0.339s
+2025-05-03 14:51:39,020 - __main__ - DEBUG - Sleeping for 14.7s
+2025-05-03 14:51:53,682 - __main__ - DEBUG - Starting loop 11 at 2025-05-03 14:51:53.682748
+2025-05-03 14:51:53,684 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:51:54,037 - __main__ - DEBUG - Price fetch completed in 0.353s
+2025-05-03 14:51:54,038 - __main__ - DEBUG - Price fetched: $96320.09 for BTCUSDT
+2025-05-03 14:51:54,041 - __main__ - DEBUG - Price window: [96333.12, 96320.1, 96320.09, 96320.1, 96320.09]
+2025-05-03 14:51:54,042 - __main__ - DEBUG - Making prediction with window: [96333.12, 96320.1, 96320.09, 96320.1, 96320.09]
+2025-05-03 14:51:54,060 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96320.09
+2025-05-03 14:51:54,061 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264114, 'datetime': '2025-05-03 14:51:53', 'price_window': [96333.12, 96320.1, 96320.09, 96320.1, 96320.09], 'current_price': 96320.09, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.37326812744140625}
+2025-05-03 14:51:54,062 - __main__ - DEBUG - Prediction completed in 0.373s
+2025-05-03 14:51:54,062 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:51:54,063 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 14:51:54,064 - __main__ - DEBUG - Loop 11 completed in 0.381s
+2025-05-03 14:51:54,064 - __main__ - DEBUG - Sleeping for 14.6s
+2025-05-03 14:52:08,685 - __main__ - DEBUG - Starting loop 12 at 2025-05-03 14:52:08.684964
+2025-05-03 14:52:08,686 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:52:08,984 - __main__ - DEBUG - Price fetch completed in 0.297s
+2025-05-03 14:52:08,985 - __main__ - DEBUG - Price fetched: $96320.10 for BTCUSDT
+2025-05-03 14:52:08,988 - __main__ - DEBUG - Price window: [96320.1, 96320.09, 96320.1, 96320.09, 96320.1]
+2025-05-03 14:52:08,989 - __main__ - DEBUG - Making prediction with window: [96320.1, 96320.09, 96320.1, 96320.09, 96320.1]
+2025-05-03 14:52:09,005 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96320.10
+2025-05-03 14:52:09,006 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264129, 'datetime': '2025-05-03 14:52:08', 'price_window': [96320.1, 96320.09, 96320.1, 96320.09, 96320.1], 'current_price': 96320.1, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.31731486320495605}
+2025-05-03 14:52:09,007 - __main__ - DEBUG - Prediction completed in 0.317s
+2025-05-03 14:52:09,008 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:52:09,009 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 14:52:09,010 - __main__ - DEBUG - Loop 12 completed in 0.325s
+2025-05-03 14:52:09,010 - __main__ - DEBUG - Sleeping for 14.7s
+2025-05-03 14:52:23,687 - __main__ - DEBUG - Starting loop 13 at 2025-05-03 14:52:23.687137
+2025-05-03 14:52:23,688 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:52:24,006 - __main__ - DEBUG - Price fetch completed in 0.317s
+2025-05-03 14:52:24,007 - __main__ - DEBUG - Price fetched: $96320.10 for BTCUSDT
+2025-05-03 14:52:24,011 - __main__ - DEBUG - Price window: [96320.09, 96320.1, 96320.09, 96320.1, 96320.1]
+2025-05-03 14:52:24,011 - __main__ - DEBUG - Making prediction with window: [96320.09, 96320.1, 96320.09, 96320.1, 96320.1]
+2025-05-03 14:52:24,029 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96320.10
+2025-05-03 14:52:24,030 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264144, 'datetime': '2025-05-03 14:52:23', 'price_window': [96320.09, 96320.1, 96320.09, 96320.1, 96320.1], 'current_price': 96320.1, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.3369159698486328}
+2025-05-03 14:52:24,031 - __main__ - DEBUG - Prediction completed in 0.337s
+2025-05-03 14:52:24,032 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:52:24,032 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 14:52:24,033 - __main__ - DEBUG - Loop 13 completed in 0.346s
+2025-05-03 14:52:24,034 - __main__ - DEBUG - Sleeping for 14.7s
+2025-05-03 14:52:38,688 - __main__ - DEBUG - Starting loop 14 at 2025-05-03 14:52:38.688615
+2025-05-03 14:52:38,689 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:52:39,069 - __main__ - DEBUG - Price fetch completed in 0.379s
+2025-05-03 14:52:39,070 - __main__ - DEBUG - Price fetched: $96320.11 for BTCUSDT
+2025-05-03 14:52:39,074 - __main__ - DEBUG - Price window: [96320.1, 96320.09, 96320.1, 96320.1, 96320.11]
+2025-05-03 14:52:39,074 - __main__ - DEBUG - Making prediction with window: [96320.1, 96320.09, 96320.1, 96320.1, 96320.11]
+2025-05-03 14:52:39,093 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96320.11
+2025-05-03 14:52:39,094 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264159, 'datetime': '2025-05-03 14:52:38', 'price_window': [96320.1, 96320.09, 96320.1, 96320.1, 96320.11], 'current_price': 96320.11, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.3996102809906006}
+2025-05-03 14:52:39,095 - __main__ - DEBUG - Prediction completed in 0.400s
+2025-05-03 14:52:39,095 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:52:39,096 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 14:52:39,096 - __main__ - DEBUG - Loop 14 completed in 0.408s
+2025-05-03 14:52:39,097 - __main__ - DEBUG - Sleeping for 14.6s
+2025-05-03 14:52:53,690 - __main__ - DEBUG - Starting loop 15 at 2025-05-03 14:52:53.690160
+2025-05-03 14:52:53,691 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:52:53,984 - __main__ - DEBUG - Price fetch completed in 0.292s
+2025-05-03 14:52:53,985 - __main__ - DEBUG - Price fetched: $96320.11 for BTCUSDT
+2025-05-03 14:52:53,988 - __main__ - DEBUG - Price window: [96320.09, 96320.1, 96320.1, 96320.11, 96320.11]
+2025-05-03 14:52:53,989 - __main__ - DEBUG - Making prediction with window: [96320.09, 96320.1, 96320.1, 96320.11, 96320.11]
+2025-05-03 14:52:54,007 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96320.11
+2025-05-03 14:52:54,008 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264174, 'datetime': '2025-05-03 14:52:53', 'price_window': [96320.09, 96320.1, 96320.1, 96320.11, 96320.11], 'current_price': 96320.11, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.31316637992858887}
+2025-05-03 14:52:54,009 - __main__ - DEBUG - Prediction completed in 0.313s
+2025-05-03 14:52:54,010 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:52:54,011 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 14:52:54,011 - __main__ - DEBUG - Loop 15 completed in 0.322s
+2025-05-03 14:52:54,012 - __main__ - DEBUG - Sleeping for 14.7s
+2025-05-03 14:53:08,692 - __main__ - DEBUG - Starting loop 16 at 2025-05-03 14:53:08.692673
+2025-05-03 14:53:08,693 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:53:09,159 - __main__ - DEBUG - Price fetch completed in 0.465s
+2025-05-03 14:53:09,160 - __main__ - DEBUG - Price fetched: $96333.33 for BTCUSDT
+2025-05-03 14:53:09,164 - __main__ - DEBUG - Price window: [96320.1, 96320.1, 96320.11, 96320.11, 96333.33]
+2025-05-03 14:53:09,165 - __main__ - DEBUG - Making prediction with window: [96320.1, 96320.1, 96320.11, 96320.11, 96333.33]
+2025-05-03 14:53:09,181 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96333.33
+2025-05-03 14:53:09,182 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264189, 'datetime': '2025-05-03 14:53:08', 'price_window': [96320.1, 96320.1, 96320.11, 96320.11, 96333.33], 'current_price': 96333.33, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.4856255054473877}
+2025-05-03 14:53:09,183 - __main__ - DEBUG - Prediction completed in 0.486s
+2025-05-03 14:53:09,184 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:53:09,185 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 14:53:09,185 - __main__ - DEBUG - Loop 16 completed in 0.493s
+2025-05-03 14:53:09,187 - __main__ - DEBUG - Sleeping for 14.5s
+2025-05-03 14:53:23,695 - __main__ - DEBUG - Starting loop 17 at 2025-05-03 14:53:23.695167
+2025-05-03 14:53:23,696 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:53:23,958 - __main__ - DEBUG - Price fetch completed in 0.261s
+2025-05-03 14:53:23,959 - __main__ - DEBUG - Price fetched: $96333.34 for BTCUSDT
+2025-05-03 14:53:23,962 - __main__ - DEBUG - Price window: [96320.1, 96320.11, 96320.11, 96333.33, 96333.34]
+2025-05-03 14:53:23,963 - __main__ - DEBUG - Making prediction with window: [96320.1, 96320.11, 96320.11, 96333.33, 96333.34]
+2025-05-03 14:53:23,979 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96333.34
+2025-05-03 14:53:23,980 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264203, 'datetime': '2025-05-03 14:53:23', 'price_window': [96320.1, 96320.11, 96320.11, 96333.33, 96333.34], 'current_price': 96333.34, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.2814295291900635}
+2025-05-03 14:53:23,981 - __main__ - DEBUG - Prediction completed in 0.281s
+2025-05-03 14:53:23,982 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:53:23,983 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 14:53:23,984 - __main__ - DEBUG - Loop 17 completed in 0.289s
+2025-05-03 14:53:23,985 - __main__ - DEBUG - Sleeping for 14.7s
+2025-05-03 14:53:38,697 - __main__ - DEBUG - Starting loop 18 at 2025-05-03 14:53:38.697059
+2025-05-03 14:53:38,698 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:53:38,958 - __main__ - DEBUG - Price fetch completed in 0.260s
+2025-05-03 14:53:38,959 - __main__ - DEBUG - Price fetched: $96333.33 for BTCUSDT
+2025-05-03 14:53:38,962 - __main__ - DEBUG - Price window: [96320.11, 96320.11, 96333.33, 96333.34, 96333.33]
+2025-05-03 14:53:38,962 - __main__ - DEBUG - Making prediction with window: [96320.11, 96320.11, 96333.33, 96333.34, 96333.33]
+2025-05-03 14:53:38,977 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96333.33
+2025-05-03 14:53:38,978 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264218, 'datetime': '2025-05-03 14:53:38', 'price_window': [96320.11, 96320.11, 96333.33, 96333.34, 96333.33], 'current_price': 96333.33, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.2765340805053711}
+2025-05-03 14:53:38,979 - __main__ - DEBUG - Prediction completed in 0.277s
+2025-05-03 14:53:38,979 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:53:38,980 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 14:53:38,981 - __main__ - DEBUG - Loop 18 completed in 0.285s
+2025-05-03 14:53:38,982 - __main__ - DEBUG - Sleeping for 14.7s
+2025-05-03 14:53:53,698 - __main__ - DEBUG - Starting loop 19 at 2025-05-03 14:53:53.698481
+2025-05-03 14:53:53,700 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:53:53,947 - __main__ - DEBUG - Price fetch completed in 0.247s
+2025-05-03 14:53:53,947 - __main__ - DEBUG - Price fetched: $96333.34 for BTCUSDT
+2025-05-03 14:53:53,950 - __main__ - DEBUG - Price window: [96320.11, 96333.33, 96333.34, 96333.33, 96333.34]
+2025-05-03 14:53:53,951 - __main__ - DEBUG - Making prediction with window: [96320.11, 96333.33, 96333.34, 96333.33, 96333.34]
+2025-05-03 14:53:53,965 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96333.34
+2025-05-03 14:53:53,966 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264233, 'datetime': '2025-05-03 14:53:53', 'price_window': [96320.11, 96333.33, 96333.34, 96333.33, 96333.34], 'current_price': 96333.34, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.2629058361053467}
+2025-05-03 14:53:53,967 - __main__ - DEBUG - Prediction completed in 0.263s
+2025-05-03 14:53:53,967 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:53:53,968 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 14:53:53,969 - __main__ - DEBUG - Loop 19 completed in 0.271s
+2025-05-03 14:53:53,969 - __main__ - DEBUG - Sleeping for 14.7s
+2025-05-03 14:54:08,699 - __main__ - DEBUG - Starting loop 20 at 2025-05-03 14:54:08.699704
+2025-05-03 14:54:08,701 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:54:09,089 - __main__ - DEBUG - Price fetch completed in 0.388s
+2025-05-03 14:54:09,090 - __main__ - DEBUG - Price fetched: $96333.34 for BTCUSDT
+2025-05-03 14:54:09,093 - __main__ - DEBUG - Price window: [96333.33, 96333.34, 96333.33, 96333.34, 96333.34]
+2025-05-03 14:54:09,094 - __main__ - DEBUG - Making prediction with window: [96333.33, 96333.34, 96333.33, 96333.34, 96333.34]
+2025-05-03 14:54:09,109 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96333.34
+2025-05-03 14:54:09,110 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264249, 'datetime': '2025-05-03 14:54:08', 'price_window': [96333.33, 96333.34, 96333.33, 96333.34, 96333.34], 'current_price': 96333.34, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.40517449378967285}
+2025-05-03 14:54:09,111 - __main__ - DEBUG - Prediction completed in 0.405s
+2025-05-03 14:54:09,112 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:54:09,112 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 14:54:09,117 - __main__ - INFO - Performance data saved to data/BTCUSDT_performance_20250503.csv
+2025-05-03 14:54:09,118 - __main__ - INFO - Bot statistics: loops=20, runtime=292.0s, predictions=20, errors=0, avg_prediction_time=0.359s, avg_trade_time=0.000s
+2025-05-03 14:54:09,119 - __main__ - DEBUG - Loop 20 completed in 0.420s
+2025-05-03 14:54:09,120 - __main__ - DEBUG - Sleeping for 14.6s
+2025-05-03 14:54:23,701 - __main__ - DEBUG - Starting loop 21 at 2025-05-03 14:54:23.701518
+2025-05-03 14:54:23,702 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:54:23,956 - __main__ - DEBUG - Price fetch completed in 0.253s
+2025-05-03 14:54:23,957 - __main__ - DEBUG - Price fetched: $96333.34 for BTCUSDT
+2025-05-03 14:54:23,960 - __main__ - DEBUG - Price window: [96333.34, 96333.33, 96333.34, 96333.34, 96333.34]
+2025-05-03 14:54:23,961 - __main__ - DEBUG - Making prediction with window: [96333.34, 96333.33, 96333.34, 96333.34, 96333.34]
+2025-05-03 14:54:23,975 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96333.34
+2025-05-03 14:54:23,976 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264263, 'datetime': '2025-05-03 14:54:23', 'price_window': [96333.34, 96333.33, 96333.34, 96333.34, 96333.34], 'current_price': 96333.34, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.2705512046813965}
+2025-05-03 14:54:23,977 - __main__ - DEBUG - Prediction completed in 0.271s
+2025-05-03 14:54:23,977 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:54:23,978 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 14:54:23,978 - __main__ - DEBUG - Loop 21 completed in 0.277s
+2025-05-03 14:54:23,979 - __main__ - DEBUG - Sleeping for 14.7s
+2025-05-03 14:54:38,702 - __main__ - DEBUG - Starting loop 22 at 2025-05-03 14:54:38.702750
+2025-05-03 14:54:38,704 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:54:38,938 - __main__ - DEBUG - Price fetch completed in 0.233s
+2025-05-03 14:54:38,939 - __main__ - DEBUG - Price fetched: $96333.35 for BTCUSDT
+2025-05-03 14:54:38,942 - __main__ - DEBUG - Price window: [96333.33, 96333.34, 96333.34, 96333.34, 96333.35]
+2025-05-03 14:54:38,943 - __main__ - DEBUG - Making prediction with window: [96333.33, 96333.34, 96333.34, 96333.34, 96333.35]
+2025-05-03 14:54:38,961 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96333.35
+2025-05-03 14:54:38,962 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264278, 'datetime': '2025-05-03 14:54:38', 'price_window': [96333.33, 96333.34, 96333.34, 96333.34, 96333.35], 'current_price': 96333.35, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.2531590461730957}
+2025-05-03 14:54:38,963 - __main__ - DEBUG - Prediction completed in 0.253s
+2025-05-03 14:54:38,964 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:54:38,964 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 14:54:38,965 - __main__ - DEBUG - Loop 22 completed in 0.263s
+2025-05-03 14:54:38,966 - __main__ - DEBUG - Sleeping for 14.7s
+2025-05-03 14:54:53,705 - __main__ - DEBUG - Starting loop 23 at 2025-05-03 14:54:53.705321
+2025-05-03 14:54:53,706 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:54:54,120 - __main__ - DEBUG - Price fetch completed in 0.413s
+2025-05-03 14:54:54,121 - __main__ - DEBUG - Price fetched: $96357.14 for BTCUSDT
+2025-05-03 14:54:54,125 - __main__ - DEBUG - Price window: [96333.34, 96333.34, 96333.34, 96333.35, 96357.14]
+2025-05-03 14:54:54,126 - __main__ - DEBUG - Making prediction with window: [96333.34, 96333.34, 96333.34, 96333.35, 96357.14]
+2025-05-03 14:54:54,143 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96357.14
+2025-05-03 14:54:54,144 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264294, 'datetime': '2025-05-03 14:54:53', 'price_window': [96333.34, 96333.34, 96333.34, 96333.35, 96357.14], 'current_price': 96357.14, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.43332672119140625}
+2025-05-03 14:54:54,145 - __main__ - DEBUG - Prediction completed in 0.433s
+2025-05-03 14:54:54,146 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:54:54,147 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 14:54:54,148 - __main__ - DEBUG - Loop 23 completed in 0.443s
+2025-05-03 14:54:54,149 - __main__ - DEBUG - Sleeping for 14.6s
+2025-05-03 14:55:08,707 - __main__ - DEBUG - Starting loop 24 at 2025-05-03 14:55:08.707016
+2025-05-03 14:55:08,708 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:55:09,054 - __main__ - DEBUG - Price fetch completed in 0.345s
+2025-05-03 14:55:09,055 - __main__ - DEBUG - Price fetched: $96357.15 for BTCUSDT
+2025-05-03 14:55:09,058 - __main__ - DEBUG - Price window: [96333.34, 96333.34, 96333.35, 96357.14, 96357.15]
+2025-05-03 14:55:09,059 - __main__ - DEBUG - Making prediction with window: [96333.34, 96333.34, 96333.35, 96357.14, 96357.15]
+2025-05-03 14:55:09,079 - __main__ - INFO - Prediction: UP with 0.62 confidence for BTCUSDT at $96357.15
+2025-05-03 14:55:09,080 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264309, 'datetime': '2025-05-03 14:55:08', 'price_window': [96333.34, 96333.34, 96333.35, 96357.14, 96357.15], 'current_price': 96357.15, 'prediction': 'UP', 'confidence': np.float64(0.6176142861214301), 'threshold_met': np.True_, 'prediction_time': 0.3660728931427002}
+2025-05-03 14:55:09,081 - __main__ - DEBUG - Prediction completed in 0.366s
+2025-05-03 14:55:09,082 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.618
+2025-05-03 14:55:09,083 - __main__ - DEBUG - Attempting to execute BUY transaction for BTCUSDT at $96357.15
+2025-05-03 14:55:10,091 - __main__ - INFO - Buy transaction executed: 142ae25f-8b01-498b-9b3c-bc2c5316cb74 for 0.01 BTCUSDT at $96357.15
+2025-05-03 14:55:10,092 - __main__ - DEBUG - Transaction details: {'transaction_id': '142ae25f-8b01-498b-9b3c-bc2c5316cb74', 'timestamp': 1746264309, 'datetime': '2025-05-03 14:55:09', 'type': 'BUY', 'symbol': 'BTCUSDT', 'price': 96357.15, 'amount': 0.01, 'total_cost': 963.5715, 'prediction_confidence': np.float64(0.6176142861214301), 'status': 'COMPLETED'}
+2025-05-03 14:55:10,093 - __main__ - DEBUG - Trade execution completed in 1.006s
+2025-05-03 14:55:10,094 - __main__ - DEBUG - Loop 24 completed in 1.388s
+2025-05-03 14:55:10,095 - __main__ - DEBUG - Sleeping for 13.6s
+2025-05-03 14:55:23,709 - __main__ - DEBUG - Starting loop 25 at 2025-05-03 14:55:23.709233
+2025-05-03 14:55:23,710 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:55:24,007 - __main__ - DEBUG - Price fetch completed in 0.296s
+2025-05-03 14:55:24,008 - __main__ - DEBUG - Price fetched: $96357.15 for BTCUSDT
+2025-05-03 14:55:24,012 - __main__ - DEBUG - Price window: [96333.34, 96333.35, 96357.14, 96357.15, 96357.15]
+2025-05-03 14:55:24,013 - __main__ - DEBUG - Making prediction with window: [96333.34, 96333.35, 96357.14, 96357.15, 96357.15]
+2025-05-03 14:55:24,030 - __main__ - INFO - Prediction: UP with 0.62 confidence for BTCUSDT at $96357.15
+2025-05-03 14:55:24,031 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264324, 'datetime': '2025-05-03 14:55:23', 'price_window': [96333.34, 96333.35, 96357.14, 96357.15, 96357.15], 'current_price': 96357.15, 'prediction': 'UP', 'confidence': np.float64(0.6176142861214301), 'threshold_met': np.True_, 'prediction_time': 0.3177464008331299}
+2025-05-03 14:55:24,032 - __main__ - DEBUG - Prediction completed in 0.318s
+2025-05-03 14:55:24,033 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.618
+2025-05-03 14:55:24,034 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 14:55:09.083145. Skipping trade.
+2025-05-03 14:55:24,035 - __main__ - DEBUG - Loop 25 completed in 0.326s
+2025-05-03 14:55:24,035 - __main__ - DEBUG - Sleeping for 14.7s
+2025-05-03 14:55:38,710 - __main__ - DEBUG - Starting loop 26 at 2025-05-03 14:55:38.710818
+2025-05-03 14:55:38,712 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:55:39,006 - __main__ - DEBUG - Price fetch completed in 0.294s
+2025-05-03 14:55:39,007 - __main__ - DEBUG - Price fetched: $96357.15 for BTCUSDT
+2025-05-03 14:55:39,011 - __main__ - DEBUG - Price window: [96333.35, 96357.14, 96357.15, 96357.15, 96357.15]
+2025-05-03 14:55:39,012 - __main__ - DEBUG - Making prediction with window: [96333.35, 96357.14, 96357.15, 96357.15, 96357.15]
+2025-05-03 14:55:39,030 - __main__ - INFO - Prediction: UP with 0.62 confidence for BTCUSDT at $96357.15
+2025-05-03 14:55:39,031 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264339, 'datetime': '2025-05-03 14:55:38', 'price_window': [96333.35, 96357.14, 96357.15, 96357.15, 96357.15], 'current_price': 96357.15, 'prediction': 'UP', 'confidence': np.float64(0.6176142861214301), 'threshold_met': np.True_, 'prediction_time': 0.3149068355560303}
+2025-05-03 14:55:39,032 - __main__ - DEBUG - Prediction completed in 0.315s
+2025-05-03 14:55:39,032 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.618
+2025-05-03 14:55:39,033 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 14:55:09.083145. Skipping trade.
+2025-05-03 14:55:39,034 - __main__ - DEBUG - Loop 26 completed in 0.324s
+2025-05-03 14:55:39,034 - __main__ - DEBUG - Sleeping for 14.7s
+2025-05-03 14:55:53,712 - __main__ - DEBUG - Starting loop 27 at 2025-05-03 14:55:53.712273
+2025-05-03 14:55:53,713 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:55:54,076 - __main__ - DEBUG - Price fetch completed in 0.362s
+2025-05-03 14:55:54,077 - __main__ - DEBUG - Price fetched: $96396.23 for BTCUSDT
+2025-05-03 14:55:54,080 - __main__ - DEBUG - Price window: [96357.14, 96357.15, 96357.15, 96357.15, 96396.23]
+2025-05-03 14:55:54,081 - __main__ - DEBUG - Making prediction with window: [96357.14, 96357.15, 96357.15, 96357.15, 96396.23]
+2025-05-03 14:55:54,098 - __main__ - INFO - Prediction: UP with 0.57 confidence for BTCUSDT at $96396.23
+2025-05-03 14:55:54,100 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264354, 'datetime': '2025-05-03 14:55:53', 'price_window': [96357.14, 96357.15, 96357.15, 96357.15, 96396.23], 'current_price': 96396.23, 'prediction': 'UP', 'confidence': np.float64(0.5686819684391125), 'threshold_met': np.False_, 'prediction_time': 0.38201189041137695}
+2025-05-03 14:55:54,101 - __main__ - DEBUG - Prediction completed in 0.382s
+2025-05-03 14:55:54,102 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.569
+2025-05-03 14:55:54,103 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 14:55:09.083145. Skipping trade.
+2025-05-03 14:55:54,104 - __main__ - DEBUG - Loop 27 completed in 0.392s
+2025-05-03 14:55:54,105 - __main__ - DEBUG - Sleeping for 14.6s
+2025-05-03 14:56:08,714 - __main__ - DEBUG - Starting loop 28 at 2025-05-03 14:56:08.714798
+2025-05-03 14:56:08,716 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:56:09,005 - __main__ - DEBUG - Price fetch completed in 0.289s
+2025-05-03 14:56:09,006 - __main__ - DEBUG - Price fetched: $96396.23 for BTCUSDT
+2025-05-03 14:56:09,008 - __main__ - DEBUG - Price window: [96357.15, 96357.15, 96357.15, 96396.23, 96396.23]
+2025-05-03 14:56:09,009 - __main__ - DEBUG - Making prediction with window: [96357.15, 96357.15, 96357.15, 96396.23, 96396.23]
+2025-05-03 14:56:09,020 - __main__ - INFO - Prediction: UP with 0.58 confidence for BTCUSDT at $96396.23
+2025-05-03 14:56:09,021 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264369, 'datetime': '2025-05-03 14:56:08', 'price_window': [96357.15, 96357.15, 96357.15, 96396.23, 96396.23], 'current_price': 96396.23, 'prediction': 'UP', 'confidence': np.float64(0.5781105398676839), 'threshold_met': np.False_, 'prediction_time': 0.30178332328796387}
+2025-05-03 14:56:09,022 - __main__ - DEBUG - Prediction completed in 0.302s
+2025-05-03 14:56:09,022 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.578
+2025-05-03 14:56:09,023 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 14:55:09.083145. Skipping trade.
+2025-05-03 14:56:09,024 - __main__ - DEBUG - Loop 28 completed in 0.310s
+2025-05-03 14:56:09,025 - __main__ - DEBUG - Sleeping for 14.7s
+2025-05-03 14:56:23,717 - __main__ - DEBUG - Starting loop 29 at 2025-05-03 14:56:23.717040
+2025-05-03 14:56:23,717 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:56:23,989 - __main__ - DEBUG - Price fetch completed in 0.271s
+2025-05-03 14:56:23,990 - __main__ - DEBUG - Price fetched: $96396.23 for BTCUSDT
+2025-05-03 14:56:23,992 - __main__ - DEBUG - Price window: [96357.15, 96357.15, 96396.23, 96396.23, 96396.23]
+2025-05-03 14:56:23,993 - __main__ - DEBUG - Making prediction with window: [96357.15, 96357.15, 96396.23, 96396.23, 96396.23]
+2025-05-03 14:56:24,012 - __main__ - INFO - Prediction: UP with 0.58 confidence for BTCUSDT at $96396.23
+2025-05-03 14:56:24,013 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264384, 'datetime': '2025-05-03 14:56:23', 'price_window': [96357.15, 96357.15, 96396.23, 96396.23, 96396.23], 'current_price': 96396.23, 'prediction': 'UP', 'confidence': np.float64(0.5781105398676839), 'threshold_met': np.False_, 'prediction_time': 0.29064226150512695}
+2025-05-03 14:56:24,014 - __main__ - DEBUG - Prediction completed in 0.291s
+2025-05-03 14:56:24,015 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.578
+2025-05-03 14:56:24,016 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 14:55:09.083145. Skipping trade.
+2025-05-03 14:56:24,017 - __main__ - DEBUG - Loop 29 completed in 0.300s
+2025-05-03 14:56:24,017 - __main__ - DEBUG - Sleeping for 14.7s
+2025-05-03 14:56:38,719 - __main__ - DEBUG - Starting loop 30 at 2025-05-03 14:56:38.719135
+2025-05-03 14:56:38,720 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:56:39,107 - __main__ - DEBUG - Price fetch completed in 0.386s
+2025-05-03 14:56:39,107 - __main__ - DEBUG - Price fetched: $96396.22 for BTCUSDT
+2025-05-03 14:56:39,110 - __main__ - DEBUG - Price window: [96357.15, 96396.23, 96396.23, 96396.23, 96396.22]
+2025-05-03 14:56:39,111 - __main__ - DEBUG - Making prediction with window: [96357.15, 96396.23, 96396.23, 96396.23, 96396.22]
+2025-05-03 14:56:39,129 - __main__ - INFO - Prediction: UP with 0.57 confidence for BTCUSDT at $96396.22
+2025-05-03 14:56:39,130 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264399, 'datetime': '2025-05-03 14:56:38', 'price_window': [96357.15, 96396.23, 96396.23, 96396.23, 96396.22], 'current_price': 96396.22, 'prediction': 'UP', 'confidence': np.float64(0.5741105398676839), 'threshold_met': np.False_, 'prediction_time': 0.405534029006958}
+2025-05-03 14:56:39,131 - __main__ - DEBUG - Prediction completed in 0.406s
+2025-05-03 14:56:39,131 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.574
+2025-05-03 14:56:39,132 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 14:55:09.083145. Skipping trade.
+2025-05-03 14:56:39,138 - __main__ - INFO - Performance data saved to data/BTCUSDT_performance_20250503.csv
+2025-05-03 14:56:39,139 - __main__ - INFO - Bot statistics: loops=30, runtime=442.0s, predictions=30, errors=0, avg_prediction_time=0.351s, avg_trade_time=1.006s
+2025-05-03 14:56:39,140 - __main__ - DEBUG - Loop 30 completed in 0.421s
+2025-05-03 14:56:39,141 - __main__ - DEBUG - Sleeping for 14.6s
+2025-05-03 14:56:53,720 - __main__ - DEBUG - Starting loop 31 at 2025-05-03 14:56:53.720790
+2025-05-03 14:56:53,721 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:56:54,014 - __main__ - DEBUG - Price fetch completed in 0.292s
+2025-05-03 14:56:54,015 - __main__ - DEBUG - Price fetched: $96396.22 for BTCUSDT
+2025-05-03 14:56:54,018 - __main__ - DEBUG - Price window: [96396.23, 96396.23, 96396.23, 96396.22, 96396.22]
+2025-05-03 14:56:54,019 - __main__ - DEBUG - Making prediction with window: [96396.23, 96396.23, 96396.23, 96396.22, 96396.22]
+2025-05-03 14:56:54,038 - __main__ - INFO - Prediction: UP with 0.54 confidence for BTCUSDT at $96396.22
+2025-05-03 14:56:54,040 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264414, 'datetime': '2025-05-03 14:56:53', 'price_window': [96396.23, 96396.23, 96396.23, 96396.22, 96396.22], 'current_price': 96396.22, 'prediction': 'UP', 'confidence': np.float64(0.5414914922486362), 'threshold_met': np.False_, 'prediction_time': 0.31241703033447266}
+2025-05-03 14:56:54,041 - __main__ - DEBUG - Prediction completed in 0.312s
+2025-05-03 14:56:54,041 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.541
+2025-05-03 14:56:54,042 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 14:55:09.083145. Skipping trade.
+2025-05-03 14:56:54,044 - __main__ - DEBUG - Loop 31 completed in 0.323s
+2025-05-03 14:56:54,045 - __main__ - DEBUG - Sleeping for 14.7s
+2025-05-03 14:57:08,723 - __main__ - DEBUG - Starting loop 32 at 2025-05-03 14:57:08.722840
+2025-05-03 14:57:08,724 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:57:09,049 - __main__ - DEBUG - Price fetch completed in 0.323s
+2025-05-03 14:57:09,049 - __main__ - DEBUG - Price fetched: $96396.22 for BTCUSDT
+2025-05-03 14:57:09,053 - __main__ - DEBUG - Price window: [96396.23, 96396.23, 96396.22, 96396.22, 96396.22]
+2025-05-03 14:57:09,054 - __main__ - DEBUG - Making prediction with window: [96396.23, 96396.23, 96396.22, 96396.22, 96396.22]
+2025-05-03 14:57:09,072 - __main__ - INFO - Prediction: UP with 0.54 confidence for BTCUSDT at $96396.22
+2025-05-03 14:57:09,073 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264429, 'datetime': '2025-05-03 14:57:08', 'price_window': [96396.23, 96396.23, 96396.22, 96396.22, 96396.22], 'current_price': 96396.22, 'prediction': 'UP', 'confidence': np.float64(0.5414914922486362), 'threshold_met': np.False_, 'prediction_time': 0.3440418243408203}
+2025-05-03 14:57:09,074 - __main__ - DEBUG - Prediction completed in 0.344s
+2025-05-03 14:57:09,076 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.541
+2025-05-03 14:57:09,077 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 14:55:09.083145. Skipping trade.
+2025-05-03 14:57:09,077 - __main__ - DEBUG - Loop 32 completed in 0.355s
+2025-05-03 14:57:09,078 - __main__ - DEBUG - Sleeping for 14.6s
+2025-05-03 14:57:23,724 - __main__ - DEBUG - Starting loop 33 at 2025-05-03 14:57:23.724671
+2025-05-03 14:57:23,725 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:57:24,025 - __main__ - DEBUG - Price fetch completed in 0.299s
+2025-05-03 14:57:24,025 - __main__ - DEBUG - Price fetched: $96365.61 for BTCUSDT
+2025-05-03 14:57:24,027 - __main__ - DEBUG - Price window: [96396.23, 96396.22, 96396.22, 96396.22, 96365.61]
+2025-05-03 14:57:24,027 - __main__ - DEBUG - Making prediction with window: [96396.23, 96396.22, 96396.22, 96396.22, 96365.61]
+2025-05-03 14:57:24,038 - __main__ - INFO - Prediction: UP with 0.57 confidence for BTCUSDT at $96365.61
+2025-05-03 14:57:24,038 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264444, 'datetime': '2025-05-03 14:57:23', 'price_window': [96396.23, 96396.22, 96396.22, 96396.22, 96365.61], 'current_price': 96365.61, 'prediction': 'UP', 'confidence': np.float64(0.5740601735673176), 'threshold_met': np.False_, 'prediction_time': 0.30951952934265137}
+2025-05-03 14:57:24,039 - __main__ - DEBUG - Prediction completed in 0.310s
+2025-05-03 14:57:24,039 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.574
+2025-05-03 14:57:24,040 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 14:55:09.083145. Skipping trade.
+2025-05-03 14:57:24,040 - __main__ - DEBUG - Loop 33 completed in 0.316s
+2025-05-03 14:57:24,041 - __main__ - DEBUG - Sleeping for 14.7s
+2025-05-03 14:57:38,726 - __main__ - DEBUG - Starting loop 34 at 2025-05-03 14:57:38.726322
+2025-05-03 14:57:38,727 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:57:39,069 - __main__ - DEBUG - Price fetch completed in 0.341s
+2025-05-03 14:57:39,070 - __main__ - DEBUG - Price fetched: $96365.61 for BTCUSDT
+2025-05-03 14:57:39,073 - __main__ - DEBUG - Price window: [96396.22, 96396.22, 96396.22, 96365.61, 96365.61]
+2025-05-03 14:57:39,074 - __main__ - DEBUG - Making prediction with window: [96396.22, 96396.22, 96396.22, 96365.61, 96365.61]
+2025-05-03 14:57:39,092 - __main__ - INFO - Prediction: UP with 0.57 confidence for BTCUSDT at $96365.61
+2025-05-03 14:57:39,093 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264459, 'datetime': '2025-05-03 14:57:38', 'price_window': [96396.22, 96396.22, 96396.22, 96365.61, 96365.61], 'current_price': 96365.61, 'prediction': 'UP', 'confidence': np.float64(0.5740601735673176), 'threshold_met': np.False_, 'prediction_time': 0.3616666793823242}
+2025-05-03 14:57:39,094 - __main__ - DEBUG - Prediction completed in 0.362s
+2025-05-03 14:57:39,095 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.574
+2025-05-03 14:57:39,096 - __main__ - INFO - Prediction confidence 0.57 below threshold 0.6. No trade executed.
+2025-05-03 14:57:39,097 - __main__ - DEBUG - Loop 34 completed in 0.371s
+2025-05-03 14:57:39,098 - __main__ - DEBUG - Sleeping for 14.6s
+2025-05-03 14:57:53,728 - __main__ - DEBUG - Starting loop 35 at 2025-05-03 14:57:53.728290
+2025-05-03 14:57:53,729 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:57:54,071 - __main__ - DEBUG - Price fetch completed in 0.341s
+2025-05-03 14:57:54,072 - __main__ - DEBUG - Price fetched: $96358.04 for BTCUSDT
+2025-05-03 14:57:54,076 - __main__ - DEBUG - Price window: [96396.22, 96396.22, 96365.61, 96365.61, 96358.04]
+2025-05-03 14:57:54,077 - __main__ - DEBUG - Making prediction with window: [96396.22, 96396.22, 96365.61, 96365.61, 96358.04]
+2025-05-03 14:57:54,093 - __main__ - INFO - Prediction: UP with 0.59 confidence for BTCUSDT at $96358.04
+2025-05-03 14:57:54,093 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264474, 'datetime': '2025-05-03 14:57:53', 'price_window': [96396.22, 96396.22, 96365.61, 96365.61, 96358.04], 'current_price': 96358.04, 'prediction': 'UP', 'confidence': np.float64(0.5904238099309539), 'threshold_met': np.False_, 'prediction_time': 0.3610403537750244}
+2025-05-03 14:57:54,094 - __main__ - DEBUG - Prediction completed in 0.361s
+2025-05-03 14:57:54,095 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.590
+2025-05-03 14:57:54,096 - __main__ - INFO - Prediction confidence 0.59 below threshold 0.6. No trade executed.
+2025-05-03 14:57:54,097 - __main__ - DEBUG - Loop 35 completed in 0.369s
+2025-05-03 14:57:54,097 - __main__ - DEBUG - Sleeping for 14.6s
+2025-05-03 14:58:08,730 - __main__ - DEBUG - Starting loop 36 at 2025-05-03 14:58:08.730099
+2025-05-03 14:58:08,731 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:58:09,029 - __main__ - DEBUG - Price fetch completed in 0.298s
+2025-05-03 14:58:09,030 - __main__ - DEBUG - Price fetched: $96358.03 for BTCUSDT
+2025-05-03 14:58:09,034 - __main__ - DEBUG - Price window: [96396.22, 96365.61, 96365.61, 96358.04, 96358.03]
+2025-05-03 14:58:09,035 - __main__ - DEBUG - Making prediction with window: [96396.22, 96365.61, 96365.61, 96358.04, 96358.03]
+2025-05-03 14:58:09,054 - __main__ - INFO - Prediction: UP with 0.58 confidence for BTCUSDT at $96358.03
+2025-05-03 14:58:09,055 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264489, 'datetime': '2025-05-03 14:58:08', 'price_window': [96396.22, 96365.61, 96365.61, 96358.04, 96358.03], 'current_price': 96358.03, 'prediction': 'UP', 'confidence': np.float64(0.5759952385023825), 'threshold_met': np.False_, 'prediction_time': 0.3184676170349121}
+2025-05-03 14:58:09,056 - __main__ - DEBUG - Prediction completed in 0.318s
+2025-05-03 14:58:09,057 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.576
+2025-05-03 14:58:09,058 - __main__ - INFO - Prediction confidence 0.58 below threshold 0.6. No trade executed.
+2025-05-03 14:58:09,059 - __main__ - DEBUG - Loop 36 completed in 0.329s
+2025-05-03 14:58:09,060 - __main__ - DEBUG - Sleeping for 14.7s
+2025-05-03 14:58:23,732 - __main__ - DEBUG - Starting loop 37 at 2025-05-03 14:58:23.732025
+2025-05-03 14:58:23,733 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:58:24,120 - __main__ - DEBUG - Price fetch completed in 0.387s
+2025-05-03 14:58:24,121 - __main__ - DEBUG - Price fetched: $96358.03 for BTCUSDT
+2025-05-03 14:58:24,125 - __main__ - DEBUG - Price window: [96365.61, 96365.61, 96358.04, 96358.03, 96358.03]
+2025-05-03 14:58:24,126 - __main__ - DEBUG - Making prediction with window: [96365.61, 96365.61, 96358.04, 96358.03, 96358.03]
+2025-05-03 14:58:24,142 - __main__ - INFO - Prediction: UP with 0.61 confidence for BTCUSDT at $96358.03
+2025-05-03 14:58:24,143 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264504, 'datetime': '2025-05-03 14:58:23', 'price_window': [96365.61, 96365.61, 96358.04, 96358.03, 96358.03], 'current_price': 96358.03, 'prediction': 'UP', 'confidence': np.float64(0.6143285718357159), 'threshold_met': np.True_, 'prediction_time': 0.405703067779541}
+2025-05-03 14:58:24,144 - __main__ - DEBUG - Prediction completed in 0.406s
+2025-05-03 14:58:24,144 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.614
+2025-05-03 14:58:24,145 - __main__ - DEBUG - Attempting to execute BUY transaction for BTCUSDT at $96358.03
+2025-05-03 14:58:25,152 - __main__ - INFO - Buy transaction executed: 7a73dc01-942f-4ae8-8e6b-d63f9cccb644 for 0.01 BTCUSDT at $96358.03
+2025-05-03 14:58:25,153 - __main__ - DEBUG - Transaction details: {'transaction_id': '7a73dc01-942f-4ae8-8e6b-d63f9cccb644', 'timestamp': 1746264504, 'datetime': '2025-05-03 14:58:24', 'type': 'BUY', 'symbol': 'BTCUSDT', 'price': 96358.03, 'amount': 0.01, 'total_cost': 963.5803, 'prediction_confidence': np.float64(0.6143285718357159), 'status': 'COMPLETED'}
+2025-05-03 14:58:25,154 - __main__ - DEBUG - Trade execution completed in 1.004s
+2025-05-03 14:58:25,154 - __main__ - DEBUG - Loop 37 completed in 1.423s
+2025-05-03 14:58:25,155 - __main__ - DEBUG - Sleeping for 13.6s
+2025-05-03 14:58:38,733 - __main__ - DEBUG - Starting loop 38 at 2025-05-03 14:58:38.733748
+2025-05-03 14:58:38,734 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:58:39,029 - __main__ - DEBUG - Price fetch completed in 0.294s
+2025-05-03 14:58:39,030 - __main__ - DEBUG - Price fetched: $96350.00 for BTCUSDT
+2025-05-03 14:58:39,032 - __main__ - DEBUG - Price window: [96365.61, 96358.04, 96358.03, 96358.03, 96350.0]
+2025-05-03 14:58:39,033 - __main__ - DEBUG - Making prediction with window: [96365.61, 96358.04, 96358.03, 96358.03, 96350.0]
+2025-05-03 14:58:39,044 - __main__ - INFO - Prediction: UP with 0.62 confidence for BTCUSDT at $96350.00
+2025-05-03 14:58:39,044 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264519, 'datetime': '2025-05-03 14:58:38', 'price_window': [96365.61, 96358.04, 96358.03, 96358.03, 96350.0], 'current_price': 96350.0, 'prediction': 'UP', 'confidence': np.float64(0.6233285718357159), 'threshold_met': np.True_, 'prediction_time': 0.30678796768188477}
+2025-05-03 14:58:39,045 - __main__ - DEBUG - Prediction completed in 0.307s
+2025-05-03 14:58:39,045 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.623
+2025-05-03 14:58:39,046 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 14:58:24.145195. Skipping trade.
+2025-05-03 14:58:39,046 - __main__ - DEBUG - Loop 38 completed in 0.313s
+2025-05-03 14:58:39,047 - __main__ - DEBUG - Sleeping for 14.7s
+2025-05-03 14:58:53,735 - __main__ - DEBUG - Starting loop 39 at 2025-05-03 14:58:53.735330
+2025-05-03 14:58:53,736 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:58:54,066 - __main__ - DEBUG - Price fetch completed in 0.329s
+2025-05-03 14:58:54,066 - __main__ - DEBUG - Price fetched: $96341.28 for BTCUSDT
+2025-05-03 14:58:54,070 - __main__ - DEBUG - Price window: [96358.04, 96358.03, 96358.03, 96350.0, 96341.28]
+2025-05-03 14:58:54,071 - __main__ - DEBUG - Making prediction with window: [96358.04, 96358.03, 96358.03, 96350.0, 96341.28]
+2025-05-03 14:58:54,086 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96341.28
+2025-05-03 14:58:54,087 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264534, 'datetime': '2025-05-03 14:58:53', 'price_window': [96358.04, 96358.03, 96358.03, 96350.0, 96341.28], 'current_price': 96341.28, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.34650301933288574}
+2025-05-03 14:58:54,088 - __main__ - DEBUG - Prediction completed in 0.347s
+2025-05-03 14:58:54,088 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:58:54,089 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 14:58:24.145195. Skipping trade.
+2025-05-03 14:58:54,090 - __main__ - DEBUG - Loop 39 completed in 0.355s
+2025-05-03 14:58:54,091 - __main__ - DEBUG - Sleeping for 14.6s
+2025-05-03 14:59:08,737 - __main__ - DEBUG - Starting loop 40 at 2025-05-03 14:59:08.737236
+2025-05-03 14:59:08,738 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:59:09,032 - __main__ - DEBUG - Price fetch completed in 0.293s
+2025-05-03 14:59:09,033 - __main__ - DEBUG - Price fetched: $96333.34 for BTCUSDT
+2025-05-03 14:59:09,036 - __main__ - DEBUG - Price window: [96358.03, 96358.03, 96350.0, 96341.28, 96333.34]
+2025-05-03 14:59:09,037 - __main__ - DEBUG - Making prediction with window: [96358.03, 96358.03, 96350.0, 96341.28, 96333.34]
+2025-05-03 14:59:09,052 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96333.34
+2025-05-03 14:59:09,053 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264549, 'datetime': '2025-05-03 14:59:08', 'price_window': [96358.03, 96358.03, 96350.0, 96341.28, 96333.34], 'current_price': 96333.34, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.30999183654785156}
+2025-05-03 14:59:09,053 - __main__ - DEBUG - Prediction completed in 0.310s
+2025-05-03 14:59:09,054 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:59:09,055 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 14:58:24.145195. Skipping trade.
+2025-05-03 14:59:09,062 - __main__ - INFO - Performance data saved to data/BTCUSDT_performance_20250503.csv
+2025-05-03 14:59:09,063 - __main__ - INFO - Bot statistics: loops=40, runtime=592.0s, predictions=40, errors=0, avg_prediction_time=0.347s, avg_trade_time=1.005s
+2025-05-03 14:59:09,064 - __main__ - DEBUG - Loop 40 completed in 0.327s
+2025-05-03 14:59:09,065 - __main__ - DEBUG - Sleeping for 14.7s
+2025-05-03 14:59:23,740 - __main__ - DEBUG - Starting loop 41 at 2025-05-03 14:59:23.739909
+2025-05-03 14:59:23,741 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:59:24,055 - __main__ - DEBUG - Price fetch completed in 0.313s
+2025-05-03 14:59:24,056 - __main__ - DEBUG - Price fetched: $96333.34 for BTCUSDT
+2025-05-03 14:59:24,059 - __main__ - DEBUG - Price window: [96358.03, 96350.0, 96341.28, 96333.34, 96333.34]
+2025-05-03 14:59:24,060 - __main__ - DEBUG - Making prediction with window: [96358.03, 96350.0, 96341.28, 96333.34, 96333.34]
+2025-05-03 14:59:24,077 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96333.34
+2025-05-03 14:59:24,078 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264564, 'datetime': '2025-05-03 14:59:23', 'price_window': [96358.03, 96350.0, 96341.28, 96333.34, 96333.34], 'current_price': 96333.34, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.33226966857910156}
+2025-05-03 14:59:24,079 - __main__ - DEBUG - Prediction completed in 0.332s
+2025-05-03 14:59:24,080 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:59:24,081 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 14:58:24.145195. Skipping trade.
+2025-05-03 14:59:24,082 - __main__ - DEBUG - Loop 41 completed in 0.342s
+2025-05-03 14:59:24,082 - __main__ - DEBUG - Sleeping for 14.7s
+2025-05-03 14:59:38,742 - __main__ - DEBUG - Starting loop 42 at 2025-05-03 14:59:38.742011
+2025-05-03 14:59:38,743 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:59:39,267 - __main__ - DEBUG - Price fetch completed in 0.523s
+2025-05-03 14:59:39,268 - __main__ - DEBUG - Price fetched: $96325.39 for BTCUSDT
+2025-05-03 14:59:39,272 - __main__ - DEBUG - Price window: [96350.0, 96341.28, 96333.34, 96333.34, 96325.39]
+2025-05-03 14:59:39,273 - __main__ - DEBUG - Making prediction with window: [96350.0, 96341.28, 96333.34, 96333.34, 96325.39]
+2025-05-03 14:59:39,290 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96325.39
+2025-05-03 14:59:39,291 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264579, 'datetime': '2025-05-03 14:59:38', 'price_window': [96350.0, 96341.28, 96333.34, 96333.34, 96325.39], 'current_price': 96325.39, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.5439188480377197}
+2025-05-03 14:59:39,292 - __main__ - DEBUG - Prediction completed in 0.544s
+2025-05-03 14:59:39,293 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:59:39,293 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 14:58:24.145195. Skipping trade.
+2025-05-03 14:59:39,294 - __main__ - DEBUG - Loop 42 completed in 0.553s
+2025-05-03 14:59:39,295 - __main__ - DEBUG - Sleeping for 14.4s
+2025-05-03 14:59:53,744 - __main__ - DEBUG - Starting loop 43 at 2025-05-03 14:59:53.744454
+2025-05-03 14:59:53,746 - __main__ - DEBUG - Fetching current price...
+2025-05-03 14:59:54,097 - __main__ - DEBUG - Price fetch completed in 0.350s
+2025-05-03 14:59:54,098 - __main__ - DEBUG - Price fetched: $96325.40 for BTCUSDT
+2025-05-03 14:59:54,104 - __main__ - DEBUG - Price window: [96341.28, 96333.34, 96333.34, 96325.39, 96325.4]
+2025-05-03 14:59:54,106 - __main__ - DEBUG - Making prediction with window: [96341.28, 96333.34, 96333.34, 96325.39, 96325.4]
+2025-05-03 14:59:54,160 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96325.40
+2025-05-03 14:59:54,161 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264594, 'datetime': '2025-05-03 14:59:53', 'price_window': [96341.28, 96333.34, 96333.34, 96325.39, 96325.4], 'current_price': 96325.4, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.40135645866394043}
+2025-05-03 14:59:54,162 - __main__ - DEBUG - Prediction completed in 0.401s
+2025-05-03 14:59:54,164 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 14:59:54,165 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 14:58:24.145195. Skipping trade.
+2025-05-03 14:59:54,168 - __main__ - DEBUG - Loop 43 completed in 0.424s
+2025-05-03 14:59:54,170 - __main__ - DEBUG - Sleeping for 14.6s
+2025-05-03 15:00:08,747 - __main__ - DEBUG - Starting loop 44 at 2025-05-03 15:00:08.747760
+2025-05-03 15:00:08,749 - __main__ - DEBUG - Fetching current price...
+2025-05-03 15:00:09,257 - __main__ - DEBUG - Price fetch completed in 0.507s
+2025-05-03 15:00:09,258 - __main__ - DEBUG - Price fetched: $96325.39 for BTCUSDT
+2025-05-03 15:00:09,261 - __main__ - DEBUG - Price window: [96333.34, 96333.34, 96325.39, 96325.4, 96325.39]
+2025-05-03 15:00:09,262 - __main__ - DEBUG - Making prediction with window: [96333.34, 96333.34, 96325.39, 96325.4, 96325.39]
+2025-05-03 15:00:09,279 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96325.39
+2025-05-03 15:00:09,280 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264609, 'datetime': '2025-05-03 15:00:08', 'price_window': [96333.34, 96333.34, 96325.39, 96325.4, 96325.39], 'current_price': 96325.39, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.5273666381835938}
+2025-05-03 15:00:09,281 - __main__ - DEBUG - Prediction completed in 0.527s
+2025-05-03 15:00:09,282 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 15:00:09,282 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 14:58:24.145195. Skipping trade.
+2025-05-03 15:00:09,283 - __main__ - DEBUG - Loop 44 completed in 0.536s
+2025-05-03 15:00:09,284 - __main__ - DEBUG - Sleeping for 14.5s
+2025-05-03 15:00:23,749 - __main__ - DEBUG - Starting loop 45 at 2025-05-03 15:00:23.749320
+2025-05-03 15:00:23,750 - __main__ - DEBUG - Fetching current price...
+2025-05-03 15:00:24,046 - __main__ - DEBUG - Price fetch completed in 0.295s
+2025-05-03 15:00:24,047 - __main__ - DEBUG - Price fetched: $96325.39 for BTCUSDT
+2025-05-03 15:00:24,050 - __main__ - DEBUG - Price window: [96333.34, 96325.39, 96325.4, 96325.39, 96325.39]
+2025-05-03 15:00:24,051 - __main__ - DEBUG - Making prediction with window: [96333.34, 96325.39, 96325.4, 96325.39, 96325.39]
+2025-05-03 15:00:24,067 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96325.39
+2025-05-03 15:00:24,067 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264624, 'datetime': '2025-05-03 15:00:23', 'price_window': [96333.34, 96325.39, 96325.4, 96325.39, 96325.39], 'current_price': 96325.39, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.3133828639984131}
+2025-05-03 15:00:24,068 - __main__ - DEBUG - Prediction completed in 0.313s
+2025-05-03 15:00:24,069 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 15:00:24,069 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 14:58:24.145195. Skipping trade.
+2025-05-03 15:00:24,070 - __main__ - DEBUG - Loop 45 completed in 0.321s
+2025-05-03 15:00:24,071 - __main__ - DEBUG - Sleeping for 14.7s
+2025-05-03 15:00:38,750 - __main__ - DEBUG - Starting loop 46 at 2025-05-03 15:00:38.750637
+2025-05-03 15:00:38,751 - __main__ - DEBUG - Fetching current price...
+2025-05-03 15:00:39,057 - __main__ - DEBUG - Price fetch completed in 0.305s
+2025-05-03 15:00:39,058 - __main__ - DEBUG - Price fetched: $96320.43 for BTCUSDT
+2025-05-03 15:00:39,061 - __main__ - DEBUG - Price window: [96325.39, 96325.4, 96325.39, 96325.39, 96320.43]
+2025-05-03 15:00:39,062 - __main__ - DEBUG - Making prediction with window: [96325.39, 96325.4, 96325.39, 96325.39, 96320.43]
+2025-05-03 15:00:39,079 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96320.43
+2025-05-03 15:00:39,080 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264639, 'datetime': '2025-05-03 15:00:38', 'price_window': [96325.39, 96325.4, 96325.39, 96325.39, 96320.43], 'current_price': 96320.43, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.3230719566345215}
+2025-05-03 15:00:39,081 - __main__ - DEBUG - Prediction completed in 0.323s
+2025-05-03 15:00:39,082 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 15:00:39,082 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 14:58:24.145195. Skipping trade.
+2025-05-03 15:00:39,083 - __main__ - DEBUG - Loop 46 completed in 0.333s
+2025-05-03 15:00:39,084 - __main__ - DEBUG - Sleeping for 14.7s
+2025-05-03 15:00:53,752 - __main__ - DEBUG - Starting loop 47 at 2025-05-03 15:00:53.752880
+2025-05-03 15:00:53,754 - __main__ - DEBUG - Fetching current price...
+2025-05-03 15:00:54,087 - __main__ - DEBUG - Price fetch completed in 0.333s
+2025-05-03 15:00:54,088 - __main__ - DEBUG - Price fetched: $96320.42 for BTCUSDT
+2025-05-03 15:00:54,091 - __main__ - DEBUG - Price window: [96325.4, 96325.39, 96325.39, 96320.43, 96320.42]
+2025-05-03 15:00:54,092 - __main__ - DEBUG - Making prediction with window: [96325.4, 96325.39, 96325.39, 96320.43, 96320.42]
+2025-05-03 15:00:54,110 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96320.42
+2025-05-03 15:00:54,111 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264654, 'datetime': '2025-05-03 15:00:53', 'price_window': [96325.4, 96325.39, 96325.39, 96320.43, 96320.42], 'current_price': 96320.42, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.3533668518066406}
+2025-05-03 15:00:54,112 - __main__ - DEBUG - Prediction completed in 0.353s
+2025-05-03 15:00:54,113 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 15:00:54,113 - __main__ - INFO - Trade cooldown period active. Last trade at 2025-05-03 14:58:24.145195. Skipping trade.
+2025-05-03 15:00:54,114 - __main__ - DEBUG - Loop 47 completed in 0.362s
+2025-05-03 15:00:54,115 - __main__ - DEBUG - Sleeping for 14.6s
+2025-05-03 15:01:08,754 - __main__ - DEBUG - Starting loop 48 at 2025-05-03 15:01:08.754615
+2025-05-03 15:01:08,755 - __main__ - DEBUG - Fetching current price...
+2025-05-03 15:01:09,087 - __main__ - DEBUG - Price fetch completed in 0.331s
+2025-05-03 15:01:09,088 - __main__ - DEBUG - Price fetched: $96320.43 for BTCUSDT
+2025-05-03 15:01:09,091 - __main__ - DEBUG - Price window: [96325.39, 96325.39, 96320.43, 96320.42, 96320.43]
+2025-05-03 15:01:09,093 - __main__ - DEBUG - Making prediction with window: [96325.39, 96325.39, 96320.43, 96320.42, 96320.43]
+2025-05-03 15:01:09,109 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96320.43
+2025-05-03 15:01:09,110 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264669, 'datetime': '2025-05-03 15:01:08', 'price_window': [96325.39, 96325.39, 96320.43, 96320.42, 96320.43], 'current_price': 96320.43, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.3503239154815674}
+2025-05-03 15:01:09,111 - __main__ - DEBUG - Prediction completed in 0.350s
+2025-05-03 15:01:09,111 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 15:01:09,112 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 15:01:09,113 - __main__ - DEBUG - Loop 48 completed in 0.359s
+2025-05-03 15:01:09,113 - __main__ - DEBUG - Sleeping for 14.6s
+2025-05-03 15:01:23,756 - __main__ - DEBUG - Starting loop 49 at 2025-05-03 15:01:23.756454
+2025-05-03 15:01:23,757 - __main__ - DEBUG - Fetching current price...
+2025-05-03 15:01:24,148 - __main__ - DEBUG - Price fetch completed in 0.390s
+2025-05-03 15:01:24,149 - __main__ - DEBUG - Price fetched: $96320.43 for BTCUSDT
+2025-05-03 15:01:24,152 - __main__ - DEBUG - Price window: [96325.39, 96320.43, 96320.42, 96320.43, 96320.43]
+2025-05-03 15:01:24,153 - __main__ - DEBUG - Making prediction with window: [96325.39, 96320.43, 96320.42, 96320.43, 96320.43]
+2025-05-03 15:01:24,169 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96320.43
+2025-05-03 15:01:24,170 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264684, 'datetime': '2025-05-03 15:01:23', 'price_window': [96325.39, 96320.43, 96320.42, 96320.43, 96320.43], 'current_price': 96320.43, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.40804576873779297}
+2025-05-03 15:01:24,171 - __main__ - DEBUG - Prediction completed in 0.408s
+2025-05-03 15:01:24,171 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 15:01:24,172 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 15:01:24,172 - __main__ - DEBUG - Loop 49 completed in 0.416s
+2025-05-03 15:01:24,173 - __main__ - DEBUG - Sleeping for 14.6s
+2025-05-03 15:01:38,758 - __main__ - DEBUG - Starting loop 50 at 2025-05-03 15:01:38.758320
+2025-05-03 15:01:38,759 - __main__ - DEBUG - Fetching current price...
+2025-05-03 15:01:39,048 - __main__ - DEBUG - Price fetch completed in 0.288s
+2025-05-03 15:01:39,049 - __main__ - DEBUG - Price fetched: $96320.42 for BTCUSDT
+2025-05-03 15:01:39,052 - __main__ - DEBUG - Price window: [96320.43, 96320.42, 96320.43, 96320.43, 96320.42]
+2025-05-03 15:01:39,053 - __main__ - DEBUG - Making prediction with window: [96320.43, 96320.42, 96320.43, 96320.43, 96320.42]
+2025-05-03 15:01:39,068 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96320.42
+2025-05-03 15:01:39,068 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264699, 'datetime': '2025-05-03 15:01:38', 'price_window': [96320.43, 96320.42, 96320.43, 96320.43, 96320.42], 'current_price': 96320.42, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.305023193359375}
+2025-05-03 15:01:39,069 - __main__ - DEBUG - Prediction completed in 0.305s
+2025-05-03 15:01:39,069 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 15:01:39,070 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 15:01:39,077 - __main__ - INFO - Performance data saved to data/BTCUSDT_performance_20250503.csv
+2025-05-03 15:01:39,078 - __main__ - INFO - Bot statistics: loops=50, runtime=742.0s, predictions=50, errors=0, avg_prediction_time=0.355s, avg_trade_time=1.005s
+2025-05-03 15:01:39,078 - __main__ - DEBUG - Loop 50 completed in 0.321s
+2025-05-03 15:01:39,079 - __main__ - DEBUG - Sleeping for 14.7s
+2025-05-03 15:01:53,760 - __main__ - DEBUG - Starting loop 51 at 2025-05-03 15:01:53.760545
+2025-05-03 15:01:53,761 - __main__ - DEBUG - Fetching current price...
+2025-05-03 15:01:54,268 - __main__ - DEBUG - Price fetch completed in 0.505s
+2025-05-03 15:01:54,269 - __main__ - DEBUG - Price fetched: $96320.42 for BTCUSDT
+2025-05-03 15:01:54,272 - __main__ - DEBUG - Price window: [96320.42, 96320.43, 96320.43, 96320.42, 96320.42]
+2025-05-03 15:01:54,273 - __main__ - DEBUG - Making prediction with window: [96320.42, 96320.43, 96320.43, 96320.42, 96320.42]
+2025-05-03 15:01:54,289 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96320.42
+2025-05-03 15:01:54,290 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264714, 'datetime': '2025-05-03 15:01:53', 'price_window': [96320.42, 96320.43, 96320.43, 96320.42, 96320.42], 'current_price': 96320.42, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.5236678123474121}
+2025-05-03 15:01:54,291 - __main__ - DEBUG - Prediction completed in 0.524s
+2025-05-03 15:01:54,292 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 15:01:54,293 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 15:01:54,293 - __main__ - DEBUG - Loop 51 completed in 0.533s
+2025-05-03 15:01:54,294 - __main__ - DEBUG - Sleeping for 14.5s
+2025-05-03 15:02:08,762 - __main__ - DEBUG - Starting loop 52 at 2025-05-03 15:02:08.762556
+2025-05-03 15:02:08,763 - __main__ - DEBUG - Fetching current price...
+2025-05-03 15:02:09,078 - __main__ - DEBUG - Price fetch completed in 0.314s
+2025-05-03 15:02:09,079 - __main__ - DEBUG - Price fetched: $96320.42 for BTCUSDT
+2025-05-03 15:02:09,082 - __main__ - DEBUG - Price window: [96320.43, 96320.43, 96320.42, 96320.42, 96320.42]
+2025-05-03 15:02:09,083 - __main__ - DEBUG - Making prediction with window: [96320.43, 96320.43, 96320.42, 96320.42, 96320.42]
+2025-05-03 15:02:09,109 - __main__ - INFO - Prediction: UP with 0.60 confidence for BTCUSDT at $96320.42
+2025-05-03 15:02:09,110 - __main__ - DEBUG - Full prediction data: {'timestamp': 1746264729, 'datetime': '2025-05-03 15:02:08', 'price_window': [96320.43, 96320.43, 96320.42, 96320.42, 96320.42], 'current_price': 96320.42, 'prediction': 'UP', 'confidence': np.float64(0.5957809527880967), 'threshold_met': np.False_, 'prediction_time': 0.342010498046875}
+2025-05-03 15:02:09,111 - __main__ - DEBUG - Prediction completed in 0.342s
+2025-05-03 15:02:09,112 - __main__ - DEBUG - Evaluating trade for prediction: UP with confidence 0.596
+2025-05-03 15:02:09,113 - __main__ - INFO - Prediction confidence 0.60 below threshold 0.6. No trade executed.
+2025-05-03 15:02:09,114 - __main__ - DEBUG - Loop 52 completed in 0.352s
+2025-05-03 15:02:09,115 - __main__ - DEBUG - Sleeping for 14.6s

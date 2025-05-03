@@ -1,0 +1,27 @@
+{
+  "timestamp": "20250503_173907_727808",
+  "unix_timestamp": 1746274147,
+  "symbol": "BTCUSDT",
+  "current_price": 95000,
+  "model_type": "ensemble",
+  "prediction": "BUY",
+  "confidence": 0.65,
+  "threshold_met": true,
+  "ml_signals": {
+    "random_forest": {
+      "prediction": "BUY",
+      "confidence": 0.72
+    },
+    "xgboost": {
+      "prediction": "BUY",
+      "confidence": 0.68
+    }
+  },
+  "voting_data": {
+    "total_voters": 2,
+    "up_votes": 2,
+    "down_votes": 0,
+    "decision": "BUY",
+    "confidence": 0.7
+  }
+}

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto AI Trading Bot - Dashboard</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            border: none;
+        }
+        
+        .card-header {
+            background-color: #343a40;
+            color: white;
+            border-radius: 10px 10px 0 0 !important;
+            font-weight: bold;
+            padding: 15px;
+        }
+        
+        .prediction-card {
+            text-align: center;
+            padding: 15px;
+        }
+        
+        .prediction-icon {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .buy-signal {
+            color: #28a745;
+        }
+        
+        .sell-signal {
+            color: #dc3545;
+        }
+        
+        .hold-signal {
+            color: #ffc107;
+        }
+        
+        .confidence-bar {
+            height: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        
+        .price-display {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .price-change {
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        
+        .positive-change {
+            color: #28a745;
+        }
+        
+        .negative-change {
+            color: #dc3545;
+        }
+        
+        .portfolio-stat {
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .portfolio-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .trades-table {
+            font-size: 0.9rem;
+        }
+        
+        .last-updated {
+            font-size: 0.8rem;
+            color: #6c757d;
+            text-align: center;
+            margin-top: 5px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h3>Crypto AI Trading Bot</h3>
+                        <div>
+                            <span id="last-updated" class="last-updated">
+                                Last updated: Loading...
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <!-- Price Display -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-chart-line me-2"></i> BTC/USDT Price
+                    </div>
+                    <div class="card-body">
+                        <div id="current-price" class="price-display">
+                            $0.00
+                        </div>
+                        <div id="price-change" class="price-change">
+                            <span class="positive-change">
+                                <i class="fas fa-caret-up"></i> 0.00%
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Portfolio Stats -->
+            <div class="col-lg-8 col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-wallet me-2"></i> Portfolio
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="portfolio-stat">
+                                    <div>Total Value</div>
+                                    <div id="portfolio-value" class="portfolio-value">$0.00</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="portfolio-stat">
+                                    <div>USDT Balance</div>
+                                    <div id="usdt-balance" class="portfolio-value">$0.00</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="portfolio-stat">
+                                    <div>BTC Holdings</div>
+                                    <div id="crypto-holdings" class="portfolio-value">0.0000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <!-- Prediction Cards -->
+            <div class="col-lg-4">
+                <div class="row">
+                    <!-- RandomForest Prediction -->
+                    <div class="col-md-12">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-brain me-2"></i> RandomForest Prediction
+                            </div>
+                            <div id="rf-prediction" class="card-body prediction-card">
+                                <div class="prediction-icon">
+                                    <i class="fas fa-question-circle"></i>
+                                </div>
+                                <div class="prediction-text">Loading...</div>
+                                <div class="progress">
+                                    <div id="rf-confidence" class="progress-bar bg-info confidence-bar" role="progressbar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- XGBoost Prediction -->
+                    <div class="col-md-12">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-robot me-2"></i> XGBoost Prediction
+                            </div>
+                            <div id="xgb-prediction" class="card-body prediction-card">
+                                <div class="prediction-icon">
+                                    <i class="fas fa-question-circle"></i>
+                                </div>
+                                <div class="prediction-text">Loading...</div>
+                                <div class="progress">
+                                    <div id="xgb-confidence" class="progress-bar bg-info confidence-bar" role="progressbar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Ensemble Prediction -->
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fas fa-cogs me-2"></i> Ensemble Prediction
+                            </div>
+                            <div id="ensemble-prediction" class="card-body prediction-card">
+                                <div class="prediction-icon">
+                                    <i class="fas fa-question-circle"></i>
+                                </div>
+                                <div class="prediction-text">Loading...</div>
+                                <div class="progress">
+                                    <div id="ensemble-confidence" class="progress-bar bg-info confidence-bar" role="progressbar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Price Chart -->
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-chart-area me-2"></i> Price Chart with Signals
+                    </div>
+                    <div class="card-body">
+                        <div id="price-chart" style="height: 400px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <!-- Portfolio Chart -->
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-chart-line me-2"></i> Portfolio Value
+                    </div>
+                    <div class="card-body">
+                        <div id="portfolio-chart" style="height: 300px;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Recent Trades -->
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <div>
+                            <i class="fas fa-exchange-alt me-2"></i> Recent Trades
+                        </div>
+                        <div>
+                            <button id="refresh-trades" class="btn btn-sm btn-outline-light">
+                                <i class="fas fa-sync-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover trades-table">
+                                <thead>
+                                    <tr>
+                                        <th>Time</th>
+                                        <th>Type</th>
+                                        <th>Price</th>
+                                        <th>Amount</th>
+                                        <th>Value</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="trades-table-body">
+                                    <tr>
+                                        <td colspan="5" class="text-center">No trades yet</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Crypto AI Trading Bot Dashboard | Powered by Machine Learning &amp; Aptos Blockchain</p>
+        </div>
+    </div>
+    
+    <!-- JavaScript Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        // Helper functions
+        function formatNumber(num, decimals = 2) {
+            return parseFloat(num).toFixed(decimals);
+        }
+        
+        function formatCurrency(num, decimals = 2) {
+            return '$' + formatNumber(num, decimals);
+        }
+        
+        function updatePredictionCard(element, prediction, confidence) {
+            const card = $(`#${element}-prediction`);
+            const confidenceBar = $(`#${element}-confidence`);
+            
+            // Update icon and color
+            let icon, color;
+            if (prediction === 'BUY') {
+                icon = '<i class="fas fa-arrow-up"></i>';
+                color = 'buy-signal';
+            } else if (prediction === 'SELL') {
+                icon = '<i class="fas fa-arrow-down"></i>';
+                color = 'sell-signal';
+            } else {
+                icon = '<i class="fas fa-pause"></i>';
+                color = 'hold-signal';
+            }
+            
+            // Remove all classes and add the new one
+            card.find('.prediction-icon')
+                .removeClass('buy-signal sell-signal hold-signal')
+                .addClass(color)
+                .html(icon);
+            
+            // Update text
+            card.find('.prediction-text').text(prediction);
+            
+            // Update confidence bar
+            const confidencePercent = confidence * 100;
+            confidenceBar.css('width', `${confidencePercent}%`);
+            confidenceBar.attr('aria-valuenow', confidencePercent);
+            
+            // Change bar color based on value
+            confidenceBar.removeClass('bg-info bg-warning bg-success');
+            if (confidencePercent < 50) {
+                confidenceBar.addClass('bg-info');
+            } else if (confidencePercent < 75) {
+                confidenceBar.addClass('bg-warning');
+            } else {
+                confidenceBar.addClass('bg-success');
+            }
+        }
+        
+        function updateTrades(trades) {
+            const tableBody = $('#trades-table-body');
+            
+            if (trades.length === 0) {
+                tableBody.html('<tr><td colspan="5" class="text-center">No trades yet</td></tr>');
+                return;
+            }
+            
+            tableBody.empty();
+            
+            // Add the most recent 10 trades
+            const recentTrades = trades.slice(-10).reverse();
+            
+            recentTrades.forEach(trade => {
+                const row = $('<tr>');
+                const typeClass = trade.type === 'BUY' ? 'buy-signal' : 'sell-signal';
+                
+                row.append(`<td>${new Date(trade.timestamp).toLocaleTimeString()}</td>`);
+                row.append(`<td class="${typeClass}">${trade.type}</td>`);
+                row.append(`<td>${formatCurrency(trade.price)}</td>`);
+                row.append(`<td>${formatNumber(trade.amount_crypto, 6)} BTC</td>`);
+                row.append(`<td>${formatCurrency(trade.amount_usdt)}</td>`);
+                
+                tableBody.append(row);
+            });
+        }
+        
+        // Main update function
+        function updateDashboard() {
+            $.ajax({
+                url: '/api/data',
+                type: 'GET',
+                success: function(data) {
+                    // Update price
+                    $('#current-price').text(formatCurrency(data.current_price));
+                    
+                    // Update portfolio stats
+                    $('#portfolio-value').text(formatCurrency(data.portfolio_value));
+                    $('#usdt-balance').text(formatCurrency(data.usdt_balance));
+                    $('#crypto-holdings').text(formatNumber(data.crypto_holdings, 6));
+                    
+                    // Update predictions
+                    updatePredictionCard('rf', data.rf_prediction, data.rf_confidence);
+                    updatePredictionCard('xgb', data.xgb_prediction, data.xgb_confidence);
+                    updatePredictionCard('ensemble', data.ensemble_prediction, data.ensemble_confidence);
+                    
+                    // Update last updated time
+                    if (data.last_update) {
+                        $('#last-updated').text(`Last updated: ${data.last_update}`);
+                    }
+                },
+                error: function() {
+                    console.error('Failed to fetch data');
+                }
+            });
+            
+            // Update charts
+            updatePriceChart();
+            updatePortfolioChart();
+            
+            // Update trades
+            $.ajax({
+                url: '/api/trades',
+                type: 'GET',
+                success: function(trades) {
+                    updateTrades(trades);
+                },
+                error: function() {
+                    console.error('Failed to fetch trades');
+                }
+            });
+        }
+        
+        function updatePriceChart() {
+            $.ajax({
+                url: '/api/price_chart',
+                type: 'GET',
+                success: function(data) {
+                    try {
+                        const chartData = JSON.parse(data);
+                        Plotly.newPlot('price-chart', chartData.data, chartData.layout);
+                    } catch (e) {
+                        console.error('Failed to parse price chart data', e);
+                    }
+                },
+                error: function() {
+                    console.error('Failed to fetch price chart');
+                }
+            });
+        }
+        
+        function updatePortfolioChart() {
+            $.ajax({
+                url: '/api/portfolio_chart',
+                type: 'GET',
+                success: function(data) {
+                    try {
+                        const chartData = JSON.parse(data);
+                        Plotly.newPlot('portfolio-chart', chartData.data, chartData.layout);
+                    } catch (e) {
+                        console.error('Failed to parse portfolio chart data', e);
+                    }
+                },
+                error: function() {
+                    console.error('Failed to fetch portfolio chart');
+                }
+            });
+        }
+        
+        // Initialize and set up refresh events
+        $(document).ready(function() {
+            // Initial update
+            updateDashboard();
+            
+            // Set up periodic refresh
+            setInterval(updateDashboard, 60000);  // Refresh every minute
+            
+            // Manual refresh for trades
+            $('#refresh-trades').click(function() {
+                $.ajax({
+                    url: '/api/trades',
+                    type: 'GET',
+                    success: function(trades) {
+                        updateTrades(trades);
+                    },
+                    error: function() {
+                        console.error('Failed to fetch trades');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

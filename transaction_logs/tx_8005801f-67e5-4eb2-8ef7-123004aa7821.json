@@ -1,0 +1,10 @@
+{
+  "transaction_id": "8005801f-67e5-4eb2-8ef7-123004aa7821",
+  "timestamp": 1746265787,
+  "datetime": "2025-05-03 15:19:47",
+  "type": "BUY",
+  "symbol": "BTCUSDT",
+  "price": 96337.13,
+  "amount": 0.01,
+  "total_cost": 963.3713,
+  "prediction_confidence": 
